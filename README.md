@@ -22,8 +22,8 @@ Please refer to the BLAST+ user manual.
 ```
 ```markdown
 Other packages:
-*Plotly
-*etc
+-Plotly
+-etc
 ```
 
 ### Download
