@@ -44,7 +44,7 @@ It is also necessary to download the databases:
 -PlantVirusesDB (.nhr, .nin, .nsq)
 -FalsePositives (.nhr, .nin, .nsq)
 ```
-The whole package can be downloaded in its compressed version.
+The whole package can be downloaded in its compressed version (vdp_project.zip).
 
 ### Supported files
 
