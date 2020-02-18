@@ -1,11 +1,13 @@
 ## Table of contents
 
 1. [Introduction](#Welcome)
+
    1.1. [Data types](#Prerequisites)
    1.2. [Pipeline](#Pipeline)  
    1.3. [Performance](#Performance)
    
 2. [Installation](#Installation)
+
    2.1. [Prerequisites](#Prerequisites)   
    2.2. [Downloading project](#Downloading)
   
