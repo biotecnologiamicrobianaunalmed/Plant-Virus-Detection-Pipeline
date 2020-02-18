@@ -3,6 +3,7 @@
 1. [Introduction](#Welcome)
 
    1.1. [Data types](#Prerequisites)
+   
    1.2. [Pipeline](#Pipeline)  
    1.3. [Performance](#Performance)
    
