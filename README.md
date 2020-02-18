@@ -1,4 +1,7 @@
-[[_TOC_]]
+## Table of contents
+
+*[Welcome](#Welcome)
+*[Prerrequisites](#Prerequisites)
 
 ### Welcome
 
