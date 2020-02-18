@@ -1,7 +1,7 @@
-## Table of contents
+# VDP 1.0 Manual
 
 1. [Introduction](#Welcome)  
-   1.1. [Data types](#Prerequisites)  
+   1.1. [Supported files](#Supportedfiles)  
    1.2. [Pipeline](#Pipeline)  
    1.3. [Performance](#Performance)
    
@@ -13,11 +13,21 @@
 
 
 
-### Welcome
+### Introduction
 
->Although Colombia has a demanding virus certification program monitored by the ICA, it is estimated that only 3-5% of the planting material used is certified. This project aims to generate a virus diagnostic platform that supports integrated viral disease management programs in Antioquia, with a view to improving productivity and environmental sustainability.
+Although Colombia has a demanding virus certification program monitored by the ICA, it is estimated that only 3-5% of the planting material used is certified. This project aims to generate a virus diagnostic platform that supports integrated viral disease management programs in Antioquia, with a view to improving productivity and environmental sustainability.
 
 The viral detection package was developed in Python and uses the BLAST tool for viral identification. A curated database and optimized parameters are used.
+
+### Supported files
+
+The tool was developed for the analysis of RNA-seq data. The files can be single or paired, they can also be in FASTQ, FASTQ.GZ or FASTA format.
+
+### Pipeline
+
+### Performance
+
+### Installation
 
 ### Prerequisites
 
@@ -61,9 +71,7 @@ It is also necessary to download the databases:
 ```
 The whole package can be downloaded in its compressed version [VDP project](https://github.com/MicrobialBiotechnologyLaboratory/Virus-Detection-Package/blob/master/vdp_project.zip).
 
-### Supported files
 
-The tool was developed for the analysis of RNA-seq data. The files can be single or paired, they can also be in FASTQ, FASTQ.GZ or FASTA format.
 
 ### Running the script
 
