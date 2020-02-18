@@ -1,8 +1,8 @@
 ## Table of contents
 
-[1. Introduction](#Welcome)
+1. [Introduction](#Welcome)
 
-    [1.1. Data types](#Prerequisites)
+   1.1. [Data types](#Prerequisites)
 
 ### Welcome
 
