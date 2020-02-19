@@ -29,7 +29,7 @@ The current version supports paired-end reads and unpaired reads. The files can 
 >@seq_ID  
 >ATCTACTACTGACATAATAGCT  
 >+  
->1***-+*''))**55CCF>>>>
+>1****+*''))*E55CCF>>>>
 
 - FASTA
 
