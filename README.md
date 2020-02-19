@@ -1,7 +1,7 @@
 # VDP 1.0 Manual
 
 1. [Introduction](#Introduction)  
-   1.1. [Supported files](#Supportedfiles)  
+   1.1. [Supported files](#Supported #files)  
    1.2. [Pipeline](#Pipeline)  
    1.3. [Performance](#Performance)
    
