@@ -57,7 +57,7 @@ The tool uses Python, BLAST, R project and RStudio to...
 
 **1. BLAST**
 
-Please go to official [BLAST](ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/) page and install the correct version for you operative system. To verify that the tool works correctly, enter the command terminal and type: *blastn*
+Please go to official [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download) page and install the correct version for you operative system. To verify that the tool works correctly, enter the command terminal and type: *blastn*
 
 The installation was successful if you get the following message:
 
