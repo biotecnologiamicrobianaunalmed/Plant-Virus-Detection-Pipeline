@@ -1,7 +1,7 @@
 # VDP 1.0 Manual
 
 1. [Introduction](#Introduction)  
-   1.1. [Supported files](#Supported\files)  
+   1.1. [Supported files](#supported)  
    1.2. [Pipeline](#Pipeline)  
    1.3. [Performance](#Performance)
    
@@ -19,6 +19,7 @@ Although Colombia has a demanding virus certification program monitored by the I
 
 The viral detection package was developed in Python and uses the BLAST tool for viral identification in RNA-seq data. A curated database and optimized parameters are used.
 
+<a name="supported"></a>
 ### Supported files
 
 The current version supports paired-end reads and unpaired reads. The files can be in two formats essentially:
