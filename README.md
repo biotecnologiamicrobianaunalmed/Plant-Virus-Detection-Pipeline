@@ -1,7 +1,7 @@
 # VDP 1.0 Manual
 
-1. [Introduction](#Welcome)  
-   1.1. [Supported files](#Supportedfiles)  
+1. [Introduction](#Introduction)  
+   1.1. [Supported files](#Supported)  
    1.2. [Pipeline](#Pipeline)  
    1.3. [Performance](#Performance)
    
@@ -9,27 +9,52 @@
    2.1. [Prerequisites](#Prerequisites)   
    2.2. [Downloading project](#Downloading)
   
-3. [Tutorial](#Tutorial)
+3. [Tutorial](#Tutorial)  
 
-
+4. [Support or contact](#Support)
 
 ### Introduction
 
 Although Colombia has a demanding virus certification program monitored by the ICA, it is estimated that only 3-5% of the planting material used is certified. This project aims to generate a virus diagnostic platform that supports integrated viral disease management programs in Antioquia, with a view to improving productivity and environmental sustainability.
 
-The viral detection package was developed in Python and uses the BLAST tool for viral identification. A curated database and optimized parameters are used.
+The viral detection package was developed in Python and uses the BLAST tool for viral identification in RNA-seq data. A curated database and optimized parameters are used.
 
 ### Supported files
 
-The tool was developed for the analysis of RNA-seq data. The files can be single or paired, they can also be in FASTQ, FASTQ.GZ or FASTA format.
+The current version supports paired-end reads and unpaired reads. The files can be in two formats essentially:
+
+- FASTQ or FASTQ.GZ:  
+
+>@seq_ID  
+>ATCTACTACTGACATAATAGCT  
+>+  
+>1***-+*''))**55CCF>>>>
+
+- FASTA
+
+> \>seq_ID  
+>ACTGCTCGACGATGACTGCATG
 
 ### Pipeline
 
+
 ### Performance
+
+
+| Data set | Disk space (GB) | Time (m) | Peak RAM usage (GB) | Additional disk space required (GB) |  
+| :---: | :---: | :---: | :---: | :---: |
+| May4.fastq | 4 | 120 | 8 | 4 |
+| May4.fastq.gz | 2 | 110 | 8 | 4 |
+| May4.fasta | 1.8 | 115 | 8 | 4 |
+
 
 ### Installation
 
+The tool uses Python, BLAST, R project and RStudio to... 
+
 ### Prerequisites
+
+1. BLAST
 
 Please go to official [BLAST](ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/) page and install the correct version for you operative system. To verify that the tool works correctly, enter the command terminal and type: *blastn*
 
@@ -40,15 +65,31 @@ BLAST query/options error: Either a BLAST database or subject sequence(s) must b
 Please refer to the BLAST+ user manual.
 ```
 
-### Dependencies
+2. Python
+
+Please go to official [Python](https://www.python.org/downloads/) page and install the correct version (3.7+) for you operative system. To verify that the tool works correctly, enter the command terminal and type: *python --version*
+
+The installation was successful if you get the following message:
 
 ```markdown
-[Python](https://www.python.org/downloads/) 3.7 or higher
+Python 3.7 (or superior)
 ```
+
+3. R project
+
+To download [R project](https://cran.r-project.org/mirrors.html) please choose your preferred CRAN mirror in the official page and the select the correct version for you operative system.
+
+4. RStudio
+
+It is necessary to have R project installed before this step. Please go to official [RStudio](https://rstudio.com/products/rstudio/download/) page and install the correct version for you operative system. To verify that the tool works correctly, run the program. 
+
+Additional the following packages need to be installed
+
 ```markdown
-Other packages:
--Plotly
--etc
+- ggplot2
+- RColorBrewer
+- dplyr
+- knitr
 ```
 
 ### Download
@@ -69,11 +110,10 @@ It is also necessary to download the databases:
 -PlantVirusesDB (.nhr, .nin, .nsq)
 -FalsePositives (.nhr, .nin, .nsq)
 ```
-The whole package can be downloaded in its compressed version [VDP project](https://github.com/MicrobialBiotechnologyLaboratory/Virus-Detection-Package/blob/master/vdp_project.zip).
+The whole package can be downloaded in its compressed version [VDP project](https://github.com/MicrobialBiotechnologyLaboratory/Virus-Detection-Package/blob/master/vdp_project.zip). 
+Individual scripts are also available in the repository.
 
-
-
-### Running the script
+### Tutorial
 
 First open the command terminal and go to the folder where the downloaded files are located. The main script is called ***VirusDetectionPlatform_v1.py***. Copy the following line of text into the terminal:
 ```markdown
