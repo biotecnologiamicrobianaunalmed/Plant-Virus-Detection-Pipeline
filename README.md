@@ -15,8 +15,6 @@
 
 ### Introduction
 
-Although Colombia has a demanding virus certification program monitored by the ICA, it is estimated that only 3-5% of the planting material used is certified. This project aims to generate a virus diagnostic platform that supports integrated viral disease management programs in Antioquia, with a view to improving productivity and environmental sustainability.
-
 The viral detection package was developed in Python and uses the BLAST tool for viral identification in RNA-seq data. A curated database and optimized parameters are used.
 
 <a name="supported"></a>
