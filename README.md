@@ -132,7 +132,7 @@ File1.fastq and file2.fastq correspond to the name of the files that will be ana
 
 ![GitHub Logo](/images/terminal_step3.png)
 
-Results: 
+Results : 
 
 ![GitHub Logo](/images/result1.png)
 
