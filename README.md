@@ -1,4 +1,4 @@
-# VDP 1.0 Manual
+# PVDP 1.0 Manual
 
 1. [Introduction](#Introduction)  
    1.1. [Supported files](#supported)  
@@ -127,6 +127,20 @@ python3 VirusDetectionPlatform_v1.py test_file1.fastq test_file2.fastq
 File1.fastq and file2.fastq correspond to the name of the files that will be analyzed. Then press enter and please be patient.
 
 ![GitHub Logo](/images/terminal_step1.png)
+
+![GitHub Logo](/images/terminal_step2.png)
+
+![GitHub Logo](/images/terminal_step3.png)
+
+Results: 
+
+![GitHub Logo](/images/result1.png)
+
+![GitHub Logo](/images/result2.png)
+
+![GitHub Logo](/images/result3.png)
+
+![GitHub Logo](/images/result4.png)
 
 The average time for a paired file of four gigabytes (eight gigabytes in total) is two and a half hours.
 
