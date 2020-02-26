@@ -116,12 +116,17 @@ Individual scripts are also available in the repository.
 
 A paired RNA-seq data test set is available in the repository.
 
+
+
+
 First open the command terminal and go to the folder where the downloaded files are located. The main script is called ***VirusDetectionPlatform_v1.py***. Copy the following line of text into the terminal:
 
 ```markdown
 python3 VirusDetectionPlatform_v1.py test_file1.fastq test_file2.fastq
 ```
 File1.fastq and file2.fastq correspond to the name of the files that will be analyzed. Then press enter and please be patient.
+
+![GitHub Logo](/images/terminal_step1.png)
 
 The average time for a paired file of four gigabytes (eight gigabytes in total) is two and a half hours.
 
