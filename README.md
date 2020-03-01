@@ -134,13 +134,15 @@ File1.fastq and file2.fastq correspond to the name of the files that will be ana
 
 Results : 
 
-![GitHub Logo](/images/result1.png)
+![Viral Result](/images/vr1.png)
 
-![GitHub Logo](/images/result2.png)
+![Viral Result](/images/vr2.png)
 
-![GitHub Logo](/images/result3.png)
+![Viral Result](/images/vr3.png)
 
-![GitHub Logo](/images/result4.png)
+![Viral Result](/images/vr4.png)
+
+![Viral Result](/images/vr5.png)
 
 The average time for a paired file of four gigabytes (eight gigabytes in total) is two and a half hours.
 
