@@ -39,13 +39,15 @@ The current version supports paired-end reads and unpaired reads. The files can 
 
 ### Performance
 
-
-| Data set | Disk space (GB) | Time (m) | Peak RAM usage (GB) | Additional disk space required (GB) |  
+| Data set | Disk space (MB) | Time (m) | Peak RAM usage (GB) | Additional disk space required (MB) |  
 | :---: | :---: | :---: | :---: | :---: |
-| May4.fastq | 4 | 120 | 8 | 4 |
+| rna_physalis_peruviana.fastq (paired) | 54 | 6 | 2.62 | 17.6 |
 | May4.fastq.gz | 2 | 110 | 8 | 4 |
-| May4.fasta | 1.8 | 115 | 8 | 4 |
 
+
+Data test:
+
+![Memory Profile](/images/memory_profile.png)
 
 ### Installation
 
