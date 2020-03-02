@@ -105,7 +105,7 @@ Additional the following packages need to be installed
 - knitr
 - rworldmap
 ```
-To verify that the graphing section is working correctly download the consolidation of [result tables](https://github.com/biotecnologiamicrobianaunalmed/Plant-Virus-Detection-Package/blob/master/results_rna_physalis_peruviana.zip). Then open RStudio, configure the working directory correctly and specify the path in which the main file is located.
+To verify that the graphing section is working correctly download the consolidation of [result tables](https://github.com/biotecnologiamicrobianaunalmed/Plant-Virus-Detection-Package/blob/master/results_rna_physalis_peruviana.zip). Then open RStudio, configure the working directory correctly and specify the path in which the main file (***List_of_tables_rna_physalis_peruviana_1_rna_physalis_peruviana_2_nr.tsv***) is located.
 
 ![Specify Path](/images/specify_path.png)
 
@@ -169,7 +169,7 @@ First open the command terminal and go to the folder where the downloaded files 
 ```markdown
 python3 ./bin/VirusDetectionPlatform_v1.py rna_physalis_peruviana_1.fastq rna_physalis_peruviana_2.fastq
 ```
-Then press enter and please be patient. The program displays messages in the terminal to inform about the step it is in. To visualize the results, follow the steps mentioned in the [RStudio section](<a name="Prerequisites"></a>).
+Then press enter and please be patient. The program displays messages in the terminal to inform about the step it is in. To visualize the results, follow the steps mentioned in the RStudio section.
 
 <a name="Support"></a>
 ### Support or Contact
