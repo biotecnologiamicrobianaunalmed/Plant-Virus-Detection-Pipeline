@@ -13,9 +13,11 @@
 
 4. [Support or contact](#Support)
 
+<a name="Introduction"></a>
 ### Introduction
 
-The viral detection package was developed in Python and uses the BLAST tool for viral identification in RNA-seq data. A curated database and optimized parameters are used.
+This package is free to use and is specific for the diagnosis of viruses in plants. It was carried out in order to strengthen the programs of genetic improvement, quarantine surveillance and certification
+of planting material.
 
 <a name="supported"></a>
 ### Supported files
@@ -34,25 +36,35 @@ The current version supports paired-end reads and unpaired reads. The files can 
 > \>seq_ID  
 >ACTGCTCGACGATGACTGCATG
 
+<a name="Pipeline"></a>
 ### Pipeline
 
+![Pipeline](/images/pvdp_pipeline.png)
 
+<a name="Performance"></a>
 ### Performance
+
+The following results were obtained by performing the analysis on an Intel Core i5 9500 CPU @ 3.00 GHz * 6, 16 GB RAM.
 
 | Data set | Disk space (MB) | Time (m) | Peak RAM usage (GB) | Additional disk space required (MB) |  
 | :---: | :---: | :---: | :---: | :---: |
-| rna_physalis_peruviana.fastq (paired) | 54 | 6 | 2.62 | 17.6 |
-| May4.fastq.gz | 2 | 110 | 8 | 4 |
+| rna_physalis_peruviana.fastq (paired) | 54 | 5.8 | 2.62 | 17.6 |
+
+![Memory Profile](/images/memory_profile_physalis.png)
 
 
-Data test:
+| Data set | Disk space (MB) | Time (m) | Peak RAM usage (GB) | Additional disk space required (MB) |  
+| :---: | :---: | :---: | :---: | :---: |
+| rna_solanum_phureja.fastq.gz | 1848 | 144 | 2 | 473.3 |
 
-![Memory Profile](/images/memory_profile.png)
+![Memory Profile](/images/memory_profile_phureja.png)
 
+<a name="Installation"></a>
 ### Installation
 
-The tool uses Python, BLAST, R project and RStudio to... 
+Sequence alignment is done through BLAST, the algorithms for automatic execution and filtering are written in Python. It is possible to interpret the result tables to generate a graphic report using Rproject and RStudio.
 
+<a name="Prerequisites"></a>
 ### Prerequisites
 
 **1. BLAST**
@@ -91,50 +103,21 @@ Additional the following packages need to be installed
 - RColorBrewer
 - dplyr
 - knitr
+- rworldmap
 ```
+To verify that the graphing section is working correctly download the consolidation of [result tables](https://github.com/MicrobialBiotechnologyLaboratory/Virus-Detection-Package/blob/master/pvdp.zip). Then open RStudio, configure the working directory correctly and specify the path in which the main file is located.
 
-### Download
+![Specify Path](/images/specify_path.png)
 
-To properly use the identification tool it is necessary to download the following routines:
+Then run the program and view the generated file. 
 
-```markdown
--VirusDetectionPlatform_v1.py
--virusBLAST_v2.py
--non_redundant_sequences_v1.py
--identification_of_virus_species_V2.py
--identificacion_of_distant_viruses_V1.py
-```
+![Run All](/images/run_all.png)
 
-It is also necessary to download the databases:
+![Preview](/images/preview.png)
 
-```markdown
--PlantVirusesDB (.nhr, .nin, .nsq)
--FalsePositives (.nhr, .nin, .nsq)
-```
-The whole package can be downloaded in its compressed version [VDP project](https://github.com/MicrobialBiotechnologyLaboratory/Virus-Detection-Package/blob/master/vdp_project.zip). 
-Individual scripts are also available in the repository.
+This file can be opened in the browser and saved by pressing print.
 
-### Tutorial
-
-A paired RNA-seq data test set is available in the repository.
-
-
-
-
-First open the command terminal and go to the folder where the downloaded files are located. The main script is called ***VirusDetectionPlatform_v1.py***. Copy the following line of text into the terminal:
-
-```markdown
-python3 VirusDetectionPlatform_v1.py test_file1.fastq test_file2.fastq
-```
-File1.fastq and file2.fastq correspond to the name of the files that will be analyzed. Then press enter and please be patient.
-
-![GitHub Logo](/images/terminal_step1.png)
-
-![GitHub Logo](/images/terminal_step2.png)
-
-![GitHub Logo](/images/terminal_step3.png)
-
-Results : 
+The generated report looks as follows:
 
 ![Viral Result](/images/vr1.png)
 
@@ -146,8 +129,49 @@ Results :
 
 ![Viral Result](/images/vr5.png)
 
-The average time for a paired file of four gigabytes (eight gigabytes in total) is two and a half hours.
+<a name="Download"></a>
+### Download
 
+The package is distributed as follows:
+
+```markdown
+----->bin
+       >VirusDetectionPlatform_v1.py
+       >virusBLAST_v2.py
+       >non_redundant_sequences_v1.py
+       >identification_of_virus_species_V2.py
+       >identificacion_of_distant_viruses_V1.py
+       >graphing.Rmd
+----->db
+       >PlantVirusesDB.nhr
+       >PlantVirusesDB.nin
+       >PlantVirusesDB.nsq
+       >FalsePositives.nhr
+       >FalsePositives.nin
+       >FalsePositives.nsq
+----->info
+       >license.txt
+```
+
+The whole package can be downloaded in its compressed version [PVDP.zip](https://github.com/MicrobialBiotechnologyLaboratory/Virus-Detection-Package/blob/master/pvdp.zip). 
+
+***The last update of the viral database was made on October 25, 2019.***
+
+<a name="Tutorial"></a>
+### Tutorial
+
+To perform this tutorial please download the [test files](https://github.com/MicrobialBiotechnologyLaboratory/Virus-Detection-Package/blob/master/pvdp.zip) that are available in the repository. Unzip the files and locate them in the package folder.
+
+![Structure](/images/main_folder.png)
+
+First open the command terminal and go to the folder where the downloaded files are located. The main script is called ***VirusDetectionPlatform_v1.py***. Copy the following line of text into the terminal:
+
+```markdown
+python3 ./bin/VirusDetectionPlatform_v1.py rna_physalis_peruviana_1.fastq rna_physalis_peruviana_2.fastq
+```
+Then press enter and please be patient. The program displays messages in the terminal to inform about the step it is in. To visualize the results, follow the steps mentioned in the RStudio section.
+
+<a name="Support"></a>
 ### Support or Contact
 
 Having troubles? Please contact us.
