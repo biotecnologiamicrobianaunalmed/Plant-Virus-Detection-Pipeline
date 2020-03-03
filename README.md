@@ -90,7 +90,7 @@ Python 3.7 (or superior)
 
 **3. R project**
 
-To download [R project](https://cran.r-project.org/mirrors.html) please choose your preferred CRAN mirror in the official page and the select the correct version for you operative system.
+To download [R project](https://cran.r-project.org/mirrors.html) please choose your preferred CRAN mirror in the official page and then select the correct version for you operative system.
 
 **4. RStudio**
 
