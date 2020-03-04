@@ -27,9 +27,9 @@ The current version supports paired-end reads and unpaired reads. The files can 
 - FASTQ or FASTQ.GZ:  
 
 >@seq_ID  
->ATCTACTACTGACATAATAGCT  
+>ATCTACTACTGAACATAATAGCT  
 >+  
->1****+*''))*E55CCF>>>>
+>1****+*''))*EF55CCF>>>>
 
 - FASTA
 
