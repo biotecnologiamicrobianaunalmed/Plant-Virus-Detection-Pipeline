@@ -17,7 +17,7 @@
 ### Introduction
 
 This package is free to use and is specific for the diagnosis of viruses in plants. It was carried out in order to strengthen the programs of genetic improvement , quarantine surveillance and certification
-of planting  material.
+of planting material.
 
 <a name="supported"></a>
 ### Supported files
