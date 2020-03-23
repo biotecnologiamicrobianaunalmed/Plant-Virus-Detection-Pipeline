@@ -73,7 +73,7 @@ Please go to official [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&P
 The installation was successful if you get the following message:
 
 ```markdown
-BLAST query/options error: Either a BLAST database or subject sequence(s) must be specified
+BLAST query/options error : Either a BLAST database or subject sequence(s) must be specified
 Please refer to the BLAST+ user manual.
 ```
 
