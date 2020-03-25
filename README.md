@@ -61,7 +61,7 @@ The following results were obtained by performing the analysis on an Intel Core 
 <a name="Installation"></a>
 ### Installation
 
-Sequence alignment is done through BLAST , the algorithms for automatic execution and filtering are written in Python. It is possible to interpret the result tables to generate a graphic report using Rproject and RStudio.
+Sequence alignment is done through BLAST, the algorithms for automatic execution and filtering are written in Python. It is possible to interpret the result tables to generate a graphic report using Rproject and RStudio.
 
 <a name="Prerequisites"></a>
 ### Prerequisites
