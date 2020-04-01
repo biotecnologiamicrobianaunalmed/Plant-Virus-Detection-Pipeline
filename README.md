@@ -16,24 +16,34 @@
 <a name="Introduction"></a>
 ### Introduction
 
-This package is free to use and is specific for the diagnosis of viruses in plants. It was carried out in order to strengthen the programs of genetic improvement, quarantine surveillance and certification of planting material.
+The low yields of many crops around the world are explained, among other aspects, by the lack of good phytosanitary management practices in addition to the widespread use of planting material not certified for its viral health. The use of next generation sequencing (NGS) has allowed the complete or partial characterization of a significant number of viral variants that infect crops in different regions of the world.
+
+This tool was carried out in order to strengthen the programs of genetic improvement, quarantine surveillance and certification of planting material. This package is free to use and is specific for the diagnosis of viruses in plants. 
 
 <a name="supported"></a>
 ### Supported files
 
-The current version supports paired-end reads and unpaired reads. The files can be in two formats essentially:
+The current version supports paired-end reads and unpaired reads, products of massively parallel sequencing technology [NGS](https://www.illumina.com/science/technology/next-generation-sequencing.html). The files can be in two formats essentially:
 
 - FASTQ or FASTQ.GZ:  
 
->@seq_ID  
->ATCTACTACTGAACATAATAGCT  
->+  
->1****+*''))*EF55CCF>>>>
+>@seq_ID                              [1]
+>
+>CTCAGCTAAATACTTTGACACCNGTANNANNNN    [2]
+> 
+> \+                                  [3]
+>
+>BBDEBDDDDHHHHFHEEEEEEEE#3AC#######   [4]
+
+FASTQ file is composed of four lines. [1] This line includes a unique ID and information such as flow cell lane information. [2] This line includes the nucleotides of the sequence. [3] A separator item (+). [4] This line includes quality values about sequences; this quality is denominated Phred Score and is described in ASCII symbols, every simbol has a respective number asociated and a higher number signifies higher acurracy of each nucleotide.
 
 - FASTA
 
-> \>seq_ID  
->ACTGCTCGACGATGACTGCATG
+> \>seq_ID                            [1]
+>
+>ACTGCTCGACGATGACTGCATGCTGCACTGTCA    [2]
+
+FASTA file is composed of two lines. [1] This line includes a unique ID. [2] This line includes the nucleotides of the sequence.
 
 <a name="Pipeline"></a>
 ### Pipeline
@@ -43,7 +53,7 @@ The current version supports paired-end reads and unpaired reads. The files can 
 <a name="Performance"></a>
 ### Performance
 
-The following results were obtained by performing the analysis on an Intel Core i5 9500 CPU @ 3.00 GHz * 6, 16 GB RAM.
+The following results were obtained by performing the analysis on an Intel Core i5 9500 CPU @ 3.00 GHz * 6, 16 GB RAM, using the package of python [Memory Profiler](https://pypi.org/project/memory-profiler/).
 
 | Data set | Disk space (MB) | Time (m) | Peak RAM usage (GB) | Additional disk space required (MB) |  
 | :---: | :---: | :---: | :---: | :---: |
@@ -57,6 +67,13 @@ The following results were obtained by performing the analysis on an Intel Core 
 | rna_solanum_phureja.fastq.gz | 1848 | 144 | 2 | 473.3 |
 
 ![Memory Profile](/images/memory_profile_phureja.png)
+
+Additionally, the execution time and the maximum peak of ram were evaluated for a set of NGS data obtained from leaf tissue of physalis peruviana. Seven data sizes were evaluated, each interval was one million reads. The following graphs summarize the information obtained:
+
+![Memory Profile](/images/time_physalis.png)
+
+![Memory Profile](/images/peak_physalis.png)
+
 
 <a name="Installation"></a>
 ### Installation
@@ -135,11 +152,13 @@ The package is distributed as follows:
 
 ```markdown
 ----->bin
-       >VirusDetectionPlatform_v1.py
-       >virusBLAST_v2.py
-       >non_redundant_sequences_v1.py
+       >identifyPlantVirusesV2.py
+       >virusBLASTv2.py
+       >nonRedundantSequencesV3.py
        >identification_of_virus_species_V2.py
        >identificacion_of_distant_viruses_V1.py
+       >genomeBLASTV2.py
+       >outputTables.py
        >graphing.Rmd
 ----->db
        >PlantVirusesDB.nhr
@@ -163,11 +182,45 @@ To perform this tutorial please download the [test files](https://github.com/bio
 
 ![Structure](/images/main_folder.png)
 
-First open the command terminal and go to the folder where the downloaded files are located. The main script is called ***VirusDetectionPlatform_v1.py***. Copy the following line of text into the terminal:
+First open the command terminal and go to the folder where the downloaded files are located. The main script is called ***identifyPlantVirusesV2.py***. In order to access to the help copy the following line of text into the terminal:
 
 ```markdown
-python3 ./bin/VirusDetectionPlatform_v1.py rna_physalis_peruviana_1.fastq rna_physalis_peruviana_2.fastq
+python3 ./bin/identifyPlantVirusesV2.py --help
 ```
+You must obtain the following information:
+
+```markdown
+usage: identifyPlantVirusesV2.py [-h] -seq1 SEQ1 [-seq2 SEQ2] [-hostdb HOSTDB]
+                                 [-num_threads NUM_THREADS] [-append] [-o O]
+                                 [-subset SUBSET] [-ra] [-top TOP]
+                                 [-threshold THRESHOLD] [-filtering_db]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -seq1 SEQ1            path to sequence file 1 in fastq or fasta format
+  -seq2 SEQ2            path to sequence file 2 in fastq or fasta format
+  -hostdb HOSTDB        path to custom filtering DB or default DBs: Potato,
+                        Gulupa or CapeGooseberry
+  -num_threads NUM_THREADS
+                        number of processors to use during BLAST searches
+  -append               create filtered sequence files progressively. Slow but
+                        requires less RAM
+  -o O                  basename of output directory and files
+  -subset SUBSET        use the specified number of reads for analysis
+  -ra                   do not include reads with ambiguous base calls
+  -top TOP              use only the most abundant non redundant reads for
+                        analysis
+  -threshold THRESHOLD  exclude non redundant reads below the specified
+                        sequence count
+  -filtering_db         uses custom filtering_db
+```
+
+To run the program the minimum requirement is to give the path to at least one of the files, that is:
+
+```markdown
+python3 ./bin/identifyPlantVirusesV2.py --seq1 /home/user/Documents/rna_physalis_peruviana_1.fastq  
+```
+
 Then press enter and please be patient. The program displays messages in the terminal to inform about the step it is in. To visualize the results, follow the steps mentioned in the RStudio section.
 
 <a name="Support"></a>
