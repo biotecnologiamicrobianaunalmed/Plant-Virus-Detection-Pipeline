@@ -33,7 +33,7 @@ The current version supports paired-end reads and unpaired reads, products of ma
 > 
 > \+                                  [3]
 >
->BBDEBDDDDHHHHFHEEEEEEEE#3AC#######   [4]
+>BBDEBDDDDHHHHFHEEEEEEEE#3AC#####   [4]
 
 FASTQ file is composed of four lines. [1] This line includes a unique ID and information such as flow cell lane information. [2] This line includes the nucleotides of the sequence. [3] A separator item (+). [4] This line includes quality values about sequences; this quality is denominated Phred Score and is described in ASCII symbols, every simbol has a respective number asociated and a higher number signifies higher acurracy of each nucleotide.
 
@@ -218,7 +218,7 @@ optional arguments:
 To run the program the minimum requirement is to give the path to at least one of the files, that is:
 
 ```markdown
-python3 ./bin/identifyPlantVirusesV2.py --seq1 /home/user/Documents/rna_physalis_peruviana_1.fastq  
+python3 ./bin/identifyPlantVirusesV2.py -seq1 /home/user/Documents/rna_physalis_peruviana_1.fastq  
 ```
 
 Then press enter and please be patient. The program displays messages in the terminal to inform about the step it is in. To visualize the results, follow the steps mentioned in the RStudio section.
