@@ -53,7 +53,7 @@ FASTA file is composed of two lines. [1] This line includes a unique ID. [2] Thi
 <a name="Performance"></a>
 ### Performance
 
-The following results were obtained by performing the analysis on an Intel Core i5 9500 CPU @ 3.00 GHz * 6, 16 GB RAM, using the package of python [Memory Profiler](https://pypi.org/project/memory-profiler/).
+The following results were obtained by performing the analysis on an Intel Core i5 9500 CPU @ 3.00 GHz * 6, 16 GB RAM, using the package of Python [Memory Profiler](https://pypi.org/project/memory-profiler/).
 
 | Data set | Disk space (MB) | Time (m) | Peak RAM usage (GB) | Additional disk space required (MB) |  
 | :---: | :---: | :---: | :---: | :---: |
