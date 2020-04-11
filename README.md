@@ -178,7 +178,7 @@ The whole package can be downloaded in its compressed version [PVDP.zip](https:/
 <a name="Tutorial"></a>
 ### Tutorial
 
-To perform this tutorial please download the [test files](https://github.com/biotecnologiamicrobianaunalmed/Plant-Virus-Detection-Package/blob/master/test_files_rna_physalis_peruviana.zip) that are available in the repository. Unzip the files and locate them in the package folder.
+To perform this tutorial please download the [TEST FILES](https://github.com/biotecnologiamicrobianaunalmed/Plant-Virus-Detection-Package/blob/master/test_files_rna_physalis_peruviana.zip) that are available in the repository. Unzip the files and locate them in the package folder.
 
 ![Structure](/images/main_folder.png)
 
