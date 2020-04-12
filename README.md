@@ -148,7 +148,21 @@ The generated report looks as follows:
 <a name="Download"></a>
 ### Download
 
-The package is distributed as follows:
+Before downloading the files make sure python works correctly verifying the version from the terminal. There are two options:
+
+```markdown
+python --version
+```
+If this command works, download [PVDP_python.zip](https://github.com/biotecnologiamicrobianaunalmed/Plant-Virus-Detection-Package/tree/master/package/PVDP_python.zip).
+
+```markdown
+python3 --version
+```
+If this command works, download [PVDP_python3.zip](https://github.com/biotecnologiamicrobianaunalmed/Plant-Virus-Detection-Package/tree/master/package/PVDP_python3.zip).
+
+If none of the above options work, you may have python installed through Anaconda, in this case you must open the Anaconda prompt and check the previous commands.
+
+Once the download is complete, locate the file in your preferred folder and unzip it; when you do this you will find the following structure:
 
 ```markdown
 ----->bin
@@ -158,8 +172,7 @@ The package is distributed as follows:
        >identification_of_virus_species_V2.py
        >identificacion_of_distant_viruses_V1.py
        >genomeBLASTV2.py
-       >outputTables.py
-       >graphing.Rmd
+       >outputTables.py       
 ----->db
        >PlantVirusesDB.nhr
        >PlantVirusesDB.nin
@@ -171,18 +184,30 @@ The package is distributed as follows:
        >license.txt
 ```
 
-The whole package can be downloaded in its compressed version [PVDP.zip](https://github.com/MicrobialBiotechnologyLaboratory/Virus-Detection-Package/blob/master/pvdp.zip). 
+Now you can continue with the next section.
 
 ***The last update of the viral database was made on October 25, 2019.***
 
 <a name="Tutorial"></a>
 ### Tutorial
 
-To perform this tutorial please download the [TEST FILES](https://github.com/biotecnologiamicrobianaunalmed/Plant-Virus-Detection-Package/blob/master/test_files_rna_physalis_peruviana.zip) that are available in the repository. Unzip the files and locate them in the package folder.
+To verify the integrity and operation of the package, download the [TEST FILES](https://github.com/biotecnologiamicrobianaunalmed/Plant-Virus-Detection-Package/tree/master/testfiles/rna_physalis_peruviana.zip) and unzip it, which correspond to FASTQ files obtained from the nucleic acids of a symptomatic sample of physalis peruviana, applying an Illumina sequencing methodology.
+
+For your ease, locate the sequencing files in the package folder, since otherwise you will have to specify the full path where the data is located.
 
 ![Structure](/images/main_folder.png)
 
-First open the command terminal and go to the folder where the downloaded files are located. The main script is called ***identifyPlantVirusesV2.py***. In order to access to the help copy the following line of text into the terminal:
+Open the command terminal and go to the folder where the downloaded files are located. The main script is called ***identifyPlantVirusesV2.py*** and it's located in the folder ***bin***. 
+
+To run the program it is necessary to run the main script with python and give it the name (if they are in the same directory) or the path of the fastq files, the structure is as follows:
+
+```markdown
+python3 ./bin/identifyPlantVirusesV2.py -seq1 rna_physalis_peruviana_1.fastq -seq2 rna_physalis_peruviana_2.fastq
+```
+
+Then press enter and please be patient. The program displays messages in the terminal to inform about the step it is in.
+
+For additional information about the main script, run the following command:
 
 ```markdown
 python3 ./bin/identifyPlantVirusesV2.py --help
@@ -214,14 +239,6 @@ optional arguments:
                         sequence count
   -filtering_db         uses custom filtering_db
 ```
-
-To run the program the minimum requirement is to give the path to at least one of the files, that is:
-
-```markdown
-python3 ./bin/identifyPlantVirusesV2.py -seq1 /home/user/Documents/rna_physalis_peruviana_1.fastq  
-```
-
-Then press enter and please be patient. The program displays messages in the terminal to inform about the step it is in. To visualize the results, follow the steps mentioned in the RStudio section.
 
 <a name="Support"></a>
 ### Support or Contact
