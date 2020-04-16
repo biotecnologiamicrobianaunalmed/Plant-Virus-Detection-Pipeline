@@ -177,9 +177,10 @@ The next step is to download the corresponding files to the [database](https://d
 
 ```markdown
 ----->Databases
-       >maskedPlantVirusDBv2.(naa, nab, nac, nhr, nin, nog, nsd, nsi, nsq), that is, nine files.
-       >Potato_masked.(naa, nab, nac, nhr, nin, nog, nsd, nsi, nsq), that is, nine files.
-  ```
+       >maskedPlantVirusDBv2.(naa, nab, nac, nhr, nin, nog, nsd, nsi, nsq).
+       >Potato_masked.(naa, nab, nac, nhr, nin, nog, nsd, nsi, nsq).
+```
+The ***Databases*** folder will have 18 files in total.  
 
 Now you can continue with the next section.
 
