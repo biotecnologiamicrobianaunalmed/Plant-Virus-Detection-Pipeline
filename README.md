@@ -153,36 +153,33 @@ Before downloading the files make sure python works correctly verifying the vers
 ```markdown
 python --version
 ```
-If this command works, download [PVDP_python.zip](https://github.com/biotecnologiamicrobianaunalmed/Plant-Virus-Detection-Package/tree/master/package/PVDP_python.zip).
+If this command works, download [Scripts_python.zip](https://github.com/biotecnologiamicrobianaunalmed/Plant-Virus-Detection-Package/tree/master/package_scripts/Scripts_python.zip).
 
 ```markdown
 python3 --version
 ```
-If this command works, download [PVDP_python3.zip](https://github.com/biotecnologiamicrobianaunalmed/Plant-Virus-Detection-Package/tree/master/package/PVDP_python3.zip).
+If this command works, download [Scripts_python3.zip](https://github.com/biotecnologiamicrobianaunalmed/Plant-Virus-Detection-Package/tree/master/package_scripts/Scripts_python3.zip).
 
 If none of the above options work, you may have python installed through Anaconda, in this case you must open the Anaconda prompt and check the previous commands.
 
 Once the download is complete, locate the file in your preferred folder and unzip it; when you do this you will find the following structure:
 
 ```markdown
------>bin
-       >identifyPlantVirusesV2.py
-       >virusBLASTv2.py
-       >nonRedundantSequencesV3.py
-       >identification_of_virus_species_V2.py
-       >identificacion_of_distant_viruses_V1.py
-       >genomeBLASTV2.py
-       >outputTables.py       
------>db
-       >PlantVirusesDB.nhr
-       >PlantVirusesDB.nin
-       >PlantVirusesDB.nsq
-       >FalsePositives.nhr
-       >FalsePositives.nin
-       >FalsePositives.nsq
------>info
-       >license.txt
+----->Scripts
+       >hostFilter_prueba.py
+       >nonRedundantSequences_prueba.py
+       >outputTables_prueba.py 
+       >plantVirusDetection_prueba.py
+       >virusFilter_prueba.py      
 ```
+
+The next step is to download the corresponding files to the [database](https://drive.google.com/drive/folders/1eZGH2zKl27UN87QtIdgRrzEC-UR7zuoP?usp=sharing). Once downloaded they should be placed in a folder called ***Databases***, next to the ***Scripts*** folder. Once the files are downloaded you will see something like this:
+
+```markdown
+----->Databases
+       >maskedPlantVirusDBv2.(naa, nab, nac, nhr, nin, nog, nsd, nsi, nsq), that is, nine files.
+       >Potato_masked.(naa, nab, nac, nhr, nin, nog, nsd, nsi, nsq), that is, nine files.
+  ```
 
 Now you can continue with the next section.
 
@@ -191,18 +188,16 @@ Now you can continue with the next section.
 <a name="Tutorial"></a>
 ### Tutorial
 
-To verify the integrity and operation of the package, download the [TEST FILES](https://github.com/biotecnologiamicrobianaunalmed/Plant-Virus-Detection-Package/tree/master/testfiles/rna_physalis_peruviana.zip) and unzip it, which correspond to FASTQ files obtained from the nucleic acids of a symptomatic sample of physalis peruviana, applying an Illumina sequencing methodology.
+To verify the integrity and operation of the package, download Illumina sequencing [test files](https://drive.google.com/drive/folders/1ECg3ibd5U9mzOif9MGeNvkAq1tKTcdij?usp=sharing) (one is enough). Create an additional folder (you can use any name) next to the two previously created and locate the downloaded file there, the ideal is to have something like this:
 
-For your ease, locate the sequencing files in the package folder, since otherwise you will have to specify the full path where the data is located.
+![Structure](/images/test_files.png)
 
-![Structure](/images/main_folder.png)
-
-Open the command terminal and go to the folder where the downloaded files are located. The main script is called ***identifyPlantVirusesV2.py*** and it's located in the folder ***bin***. 
+Open the command terminal and go to the folder where the downloaded files are located. The main script is called ***plantVirusDetection_prueba.py*** and it's located in the folder ***Scripts***. 
 
 To run the program it is necessary to run the main script with python and give it the name (if they are in the same directory) or the path of the fastq files, the structure is as follows:
 
 ```markdown
-python3 ./bin/identifyPlantVirusesV2.py -seq1 rna_physalis_peruviana_1.fastq -seq2 rna_physalis_peruviana_2.fastq
+python3 Scripts/plantVirusDetection_prueba.py -seq1 Test_files/Dic1_1a.fastq -hostdb Potato_masked 
 ```
 
 Then press enter and please be patient. The program displays messages in the terminal to inform about the step it is in.
@@ -210,7 +205,7 @@ Then press enter and please be patient. The program displays messages in the ter
 For additional information about the main script, run the following command:
 
 ```markdown
-python3 ./bin/identifyPlantVirusesV2.py --help
+python3 Scripts/plantVirusDetection_prueba.py --help
 ```
 You must obtain the following information:
 
