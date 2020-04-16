@@ -209,31 +209,7 @@ python3 Scripts/plantVirusDetection_prueba.py --help
 ```
 You must obtain the following information:
 
-```markdown
-usage: identifyPlantVirusesV2.py [-h] -seq1 SEQ1 [-seq2 SEQ2] [-hostdb HOSTDB]
-                                 [-num_threads NUM_THREADS] [-append] [-o O]
-                                 [-subset SUBSET] [-ra] [-top TOP]
-                                 [-threshold THRESHOLD] [-filtering_db]
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -seq1 SEQ1            path to sequence file 1 in fastq or fasta format
-  -seq2 SEQ2            path to sequence file 2 in fastq or fasta format
-  -hostdb HOSTDB        path to custom filtering DB or default DBs: Potato,
-                        Gulupa or CapeGooseberry
-  -num_threads NUM_THREADS
-                        number of processors to use during BLAST searches
-  -append               create filtered sequence files progressively. Slow but
-                        requires less RAM
-  -o O                  basename of output directory and files
-  -subset SUBSET        use the specified number of reads for analysis
-  -ra                   do not include reads with ambiguous base calls
-  -top TOP              use only the most abundant non redundant reads for
-                        analysis
-  -threshold THRESHOLD  exclude non redundant reads below the specified
-                        sequence count
-  -filtering_db         uses custom filtering_db
-```
+![Structure](/images/help.png)
 
 <a name="Support"></a>
 ### Support or Contact
