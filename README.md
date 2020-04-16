@@ -194,7 +194,7 @@ To verify the integrity and operation of the package, download Illumina sequenci
 
 Open the command terminal and go to the folder where the downloaded files are located. The main script is called ***plantVirusDetection_prueba.py*** and it's located in the folder ***Scripts***. 
 
-To run the program it is necessary to run the main script with python and give it the name (if they are in the same directory) or the path of the fastq files, the structure is as follows:
+To run the program it is necessary to run the main script with python and give it the path of the fastq files, the structure is as follows:
 
 ```markdown
 python3 Scripts/plantVirusDetection_prueba.py -seq1 Test_files/Dic1_1a.fastq -hostdb Potato_masked 
