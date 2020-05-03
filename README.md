@@ -192,10 +192,18 @@ You must obtain the following information:
 To execute the program it is necessary to run the main script and give it the path of at least one fastq file. The main script is called ***plantVirusDetectionV2.py*** and it's located in the folder ***Scripts***. The structure if the command is as follows:
 
 ```markdown
-Scripts/plantVirusDetectionV2.py -seq1 Testfiles/data.fastq
+python Scripts/plantVirusDetectionV2.py -seq1 Testfiles/data.fastq
 ```
 
-Then press enter and please be patient. The program displays messages in the terminal to inform about the step it is in, at the end you can see the viruses detected in a summarized way. 
+Then press enter and please be patient. If you get an error like:
+
+```markdown
+"python" is not recognized as an internal or external command, operable program or batch file.
+```
+
+Use the same command, but instead of **python** try **py**. A third option is to try **python3**. If none of the previous solutions work, check the troubleshooting section.
+
+The program displays messages in the terminal to inform about the step it is in, at the end you can see the viruses detected in a summarized way. 
 
 The results folder looks like this:
 
@@ -206,7 +214,7 @@ With the previous results you can continue with the graphing section.
 You can also use a database as a filter, this will make the process more efficient if the host of the sample is potato. The command would be like this:
 
 ```markdown
-Scripts/plantVirusDetectionV2.py -seq1 Testfiles/data.fastq -hostdb Potato_masked 
+python Scripts/plantVirusDetectionV2.py -seq1 Testfiles/data.fastq -hostdb Potato_masked 
 ```
 
 **GRAPHING**
@@ -232,7 +240,7 @@ You can close the window, the report is saved in the **Scripts** folder, under t
 
 - Windows systems:
 
-> ´python3´ is not recognized as an internal or external command, operable program or batch file.
+> python **AND** py **AND** python3 ... is not recognized as an internal or external command, operable program or batch file.
 
 You may have python installed through Anaconda, in this case you must open the Anaconda prompt.
 
