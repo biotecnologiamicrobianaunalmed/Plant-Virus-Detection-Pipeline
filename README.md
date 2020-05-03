@@ -112,105 +112,118 @@ To download [R project](https://cran.r-project.org/mirrors.html) please choose y
 
 It is necessary to have R project installed before this step. Please go to official [RStudio](https://rstudio.com/products/rstudio/download/) page and install the correct version for you operative system. To verify that the tool works correctly, run the program. 
 
-Additional the following packages need to be installed
+The following packages need to be installed:
 
 ```markdown
 - ggplot2
 - RColorBrewer
-- dplyr
 - knitr
-- rworldmap
 ```
-To verify that the graphing section is working correctly download the consolidation of [result tables](https://github.com/biotecnologiamicrobianaunalmed/Plant-Virus-Detection-Package/blob/master/results_rna_physalis_peruviana.zip). Then open RStudio, configure the working directory correctly and specify the path in which the main file (***List_of_tables_rna_physalis_peruviana_1_rna_physalis_peruviana_2_nr.tsv***) is located.
+<!---
+To verify that the graphing section is working correctly download the consolidation of [result tables](https://github.com/biotecnologiamicrobianaunalmed/Plant-Virus-Detection-Package/blob/master/results_rna_physalis_peruviana.zip). Then open RStudio, configure the working directory correctly and specify the path in which the main file (***List_of_tables_rna_physalis_peruviana_1_rna_physalis_peruviana_2_nr.tsv***) is located.--->
 
-![Specify Path](/images/specify_path.png)
+<!---![Specify Path](/images/specify_path.png)--->
 
-Then run the program and view the generated file. 
+<!---Then run the program and view the generated file.---> 
 
-![Run All](/images/run_all.png)
+<!---![Run All](/images/run_all.png)--->
 
-![Preview](/images/preview.png)
+<!---![Preview](/images/preview.png)--->
 
-This file can be opened in the browser and saved by pressing print.
+<!---This file can be opened in the browser and saved by pressing print.--->
 
-The generated report looks as follows:
+<!---The generated report looks as follows:--->
 
-![Viral Result](/images/vr1.png)
+<!---![Viral Result](/images/vr1.png)--->
 
-![Viral Result](/images/vr2.png)
+<!---![Viral Result](/images/vr2.png)--->
 
-![Viral Result](/images/vr3.png)
+<!---![Viral Result](/images/vr3.png)--->
 
-![Viral Result](/images/vr4.png)
+<!---![Viral Result](/images/vr4.png)--->
 
-![Viral Result](/images/vr5.png)
+<!---![Viral Result](/images/vr5.png)--->
 
 <a name="Download"></a>
 ### Download
 
-Before downloading the files make sure python works correctly verifying the version from the terminal. There are two options:
+Before downloading the files make sure you meet the essential [prerequisites](#Prerequisites), i.e. **Python** and **BLAST**. If you want to generate a graphic report in html format, you must also meet the additional prerequisites.
 
-```markdown
-python --version
-```
-If this command works, download [Scripts_python.zip](https://github.com/biotecnologiamicrobianaunalmed/Plant-Virus-Detection-Package/tree/master/package_scripts/Scripts_python.zip).
-
-```markdown
-python3 --version
-```
-If this command works, download [Scripts_python3.zip](https://github.com/biotecnologiamicrobianaunalmed/Plant-Virus-Detection-Package/tree/master/package_scripts/Scripts_python3.zip).
-
-If none of the above options work, you may have python installed through Anaconda, in this case you must open the Anaconda prompt and check the previous commands.
+You can obtain the detection package in its compressed version [here](https://drive.google.com/drive/folders/1gk9KyMXeIE7wy1GjyiTgrEwD9sDhsASA?usp=sharing). It contains the run and graph scripts, the databases and a test file.
 
 Once the download is complete, locate the file in your preferred folder and unzip it; when you do this you will find the following structure:
 
 ```markdown
 ----->Scripts
-       >hostFilter_prueba.py
-       >nonRedundantSequences_prueba.py
-       >outputTables_prueba.py 
-       >plantVirusDetection_prueba.py
-       >virusFilter_prueba.py      
-```
-
-The next step is to download the corresponding files to the [database](https://drive.google.com/drive/folders/1eZGH2zKl27UN87QtIdgRrzEC-UR7zuoP?usp=sharing). Once downloaded they should be placed in a folder called ***Databases***, next to the ***Scripts*** folder. Once the files are downloaded you will see something like this:
-
-```markdown
------>Databases
-       >maskedPlantVirusDBv2.(naa, nab, nac, nhr, nin, nog, nsd, nsi, nsq).
+       >hostFilterV2.py
+       >nonRedundantSequencesV2.py
+       >plantVirusDetectionV2.py
+       >selectionOfPositives
+       >virusBLASTV2.py
+       >VirusReport.Rmd
+       
+----->Databases (18 files)
+       >PlantVirusesDB_0420v4_masked.(naa, nab, nac, nhr, nin, nog, nsd, nsi, nsq).
        >Potato_masked.(naa, nab, nac, nhr, nin, nog, nsd, nsi, nsq).
+       
+----->Testfiles
+       >data.fastq
 ```
-The ***Databases*** folder will have 18 files in total.  
 
 Now you can continue with the next section.
 
-***The last update of the viral database was made on October 25, 2019.***
+***The last update of the viral database was made on April, 2020.***
 
 <a name="Tutorial"></a>
 ### Tutorial
 
-To verify the integrity and operation of the package, download Illumina sequencing [test files](https://drive.google.com/drive/folders/1ECg3ibd5U9mzOif9MGeNvkAq1tKTcdij?usp=sharing) (one is enough). Create an additional folder (you can use any name) next to the two previously created and locate the downloaded file there, the ideal is to have something like this:
+<!---!![Structure](/images/test_files.png)--->
+Open the terminal or the command prompt and go to the folder where the downloaded files are located.
 
-![Structure](/images/test_files.png)
-
-Open the command terminal and go to the folder where the downloaded files are located. The main script is called ***plantVirusDetection_prueba.py*** and it's located in the folder ***Scripts***. 
-
-To run the program it is necessary to run the main script with python and give it the path of the fastq files, the structure is as follows:
+You can access the program's help by writing the following line:
 
 ```markdown
-python3 Scripts/plantVirusDetection_prueba.py -seq1 Test_files/Dic1_1a.fastq -hostdb Potato_masked 
-```
-
-Then press enter and please be patient. The program displays messages in the terminal to inform about the step it is in.
-
-For additional information about the main script, run the following command:
-
-```markdown
-python3 Scripts/plantVirusDetection_prueba.py --help
+Scripts/plantVirusDetectionV2.py --help
 ```
 You must obtain the following information:
 
 ![Structure](/images/help.png)
+
+To execute the program it is necessary to run the main script and give it the path of at least one fastq file. The main script is called ***plantVirusDetectionV2.py*** and it's located in the folder ***Scripts***. The structure if the command is as follows:
+
+```markdown
+Scripts/plantVirusDetectionV2.py -seq1 Testfiles/data.fastq
+```
+
+Then press enter and please be patient. The program displays messages in the terminal to inform about the step it is in, at the end you can see the viruses detected in a summarized way. 
+
+You can also use a potato database that is built into the files as a host filter:
+
+```markdown
+Scripts/plantVirusDetectionV2.py -seq1 Testfiles/data.fastq -hostdb Potato_masked 
+```
+The results folder looks like this:
+
+![Structure](/images/result_folder.PNG)
+
+**GRAPHING**
+
+When the process ends it is possible to create the graphic report in html format. To do this you need to open the file **VirusReport.Rmd** in Rstudio and have the required packages installed. 
+
+Fisrt set the working directory, the file will be save there. Then modify the *path_to_files* variable, specifying the full path to the Tables folder (1) found in the results folder, Run All (2) and Knit the document (3).
+
+![Structure](/images/rstudio.PNG)
+
+This will open the report, which is saved in the previously established working directory.
+
+
+**TROUBLESHOOTING**
+
+- Windows systems:
+
+> ´python3´ is not recognized as an internal or external command, operable program or batch file.
+
+You may have python installed through Anaconda, in this case you must open the Anaconda prompt.
 
 <a name="Support"></a>
 ### Support or Contact
