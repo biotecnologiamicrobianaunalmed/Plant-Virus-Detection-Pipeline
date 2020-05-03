@@ -213,7 +213,7 @@ Scripts/plantVirusDetectionV2.py -seq1 Testfiles/data.fastq -hostdb Potato_maske
 
 When the process ends it is possible to create the graphic report in html format. To do this you need to open the file **VirusReport.Rmd** in Rstudio and have the required packages installed. 
 
-First set the working directory, the file will be save there. Then modify the *path_to_files* variable, specifying the full path to the Tables folder (1) found in the results folder, Run All (2) and Knit the document (3).
+First modify the *path_to_files* variable, specifying the full path to the Tables folder (1) found in the results folder, Run All (2) and Knit the document (3).
 
 ![Structure](/images/rstudio.PNG)
 
