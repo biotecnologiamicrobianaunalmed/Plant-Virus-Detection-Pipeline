@@ -197,14 +197,17 @@ Scripts/plantVirusDetectionV2.py -seq1 Testfiles/data.fastq
 
 Then press enter and please be patient. The program displays messages in the terminal to inform about the step it is in, at the end you can see the viruses detected in a summarized way. 
 
-You can also use a potato database that is built into the files as a host filter:
+The results folder looks like this:
+
+![Structure](/images/result_folder.PNG)
+
+With the previous results you can continue with the graphing section.
+
+You can also use a database as a filter, this will make the process more efficient if the host of the sample is potato. The command would be like this:
 
 ```markdown
 Scripts/plantVirusDetectionV2.py -seq1 Testfiles/data.fastq -hostdb Potato_masked 
 ```
-The results folder looks like this:
-
-![Structure](/images/result_folder.PNG)
 
 **GRAPHING**
 
@@ -214,7 +217,15 @@ First set the working directory, the file will be save there. Then modify the *p
 
 ![Structure](/images/rstudio.PNG)
 
-This will open the report, which is saved in the previously established working directory.
+Make sure that the path (1) ends with a slash, otherwise you may get an error, i.e. **../Tables/**.
+
+When you use Run All (2) you should see a green loading bar at the bottom right like this:
+
+![Structure](/images/done.PNG)
+
+The process ends once the bar loads completely. Then it is possible to Knit (3) the document and if everything was satisfactory a window will open with the respective report.
+
+You can close the window, the report is saved in the **Scripts** folder, under the name of *VirusReport.html*.
 
 
 **TROUBLESHOOTING**
