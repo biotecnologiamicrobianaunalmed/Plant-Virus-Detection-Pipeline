@@ -183,11 +183,19 @@ Open the terminal or the command prompt and go to the folder where the downloade
 You can access the program's help by writing the following line:
 
 ```markdown
-Scripts/plantVirusDetectionV2.py --help
+python Scripts/plantVirusDetectionV2.py --help
 ```
 You must obtain the following information:
 
 ![Structure](/images/help.png)
+
+If you get an error like:
+
+```markdown
+"python" is not recognized as an internal or external command, operable program or batch file.
+```
+
+Use the same command, but instead of **python** try **py**. A third option is to try **python3**. If none of the previous solutions work, check the troubleshooting section.
 
 To execute the program it is necessary to run the main script and give it the path of at least one fastq file. The main script is called ***plantVirusDetectionV2.py*** and it's located in the folder ***Scripts***. The structure if the command is as follows:
 
@@ -195,13 +203,7 @@ To execute the program it is necessary to run the main script and give it the pa
 python Scripts/plantVirusDetectionV2.py -seq1 Testfiles/data.fastq
 ```
 
-Then press enter and please be patient. If you get an error like:
-
-```markdown
-"python" is not recognized as an internal or external command, operable program or batch file.
-```
-
-Use the same command, but instead of **python** try **py**. A third option is to try **python3**. If none of the previous solutions work, check the troubleshooting section.
+Then press enter and please be patient. 
 
 The program displays messages in the terminal to inform about the step it is in, at the end you can see the viruses detected in a summarized way. 
 
