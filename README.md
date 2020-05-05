@@ -96,7 +96,7 @@ Please refer to the BLAST+ user manual.
 
 **2. Python**
 
-Please go to official [Python](https://www.python.org/downloads/) page and install the correct version (3.7+) for you operative system. To verify that the tool works correctly, enter the command terminal and type: python  --version
+Please go to official [Python](https://www.python.org/downloads/) page and install the correct version (3.7+) for you operative system. To verify that the tool works correctly, enter the command terminal and type: python  \--version
 
 The installation was successful if you get the following message:
 
