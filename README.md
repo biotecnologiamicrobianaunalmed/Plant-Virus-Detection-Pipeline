@@ -83,9 +83,9 @@ Sequence alignment is done through BLAST, the algorithms for automatic execution
 <a name="Prerequisites"></a>
 ### Prerequisites
 
-**1. BLAST**
+**1. BLAST+**
 
-Please go to official [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download) page and install the correct version for you operative system. To verify that the tool works correctly, enter the command terminal and type: *blastn*
+Please go to official [BLAST+](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download) page and install the correct version for you operative system. To verify that the tool works correctly, enter the command terminal and type: *blastn*
 
 The installation was successful if you get the following message:
 
@@ -96,7 +96,7 @@ Please refer to the BLAST+ user manual.
 
 **2. Python**
 
-Please go to official [Python](https://www.python.org/downloads/) page and install the correct version (3.7+) for you operative system. To verify that the tool works correctly, enter the command terminal and type: *python --version*
+Please go to official [Python](https://www.python.org/downloads/) page and install the correct version (3.7+) for you operative system. To verify that the tool works correctly, enter the command terminal and type: *python  --version*
 
 The installation was successful if you get the following message:
 
@@ -149,7 +149,7 @@ To verify that the graphing section is working correctly download the consolidat
 
 Before downloading the files make sure you meet the essential [prerequisites](#Prerequisites), i.e. **Python** and **BLAST**. If you want to generate a graphic report in html format, you must also meet the additional prerequisites.
 
-You can obtain the detection package in its compressed version [here](https://drive.google.com/drive/folders/1gk9KyMXeIE7wy1GjyiTgrEwD9sDhsASA?usp=sharing). It contains the run and graph scripts, the databases and a test file.
+You can obtain the detection package in its compressed version at the following [link](https://drive.google.com/drive/folders/1gk9KyMXeIE7wy1GjyiTgrEwD9sDhsASA?usp=sharing). It contains the run and graph scripts, the databases and a test file.
 
 Once the download is complete, locate the file in your preferred folder and unzip it; when you do this you will find the following structure:
 
