@@ -197,7 +197,7 @@ If you get an error like:
 
 Use the same command, but instead of **python** try **py**. A third option is to try **python3**. If none of the previous solutions work, check the troubleshooting section.
 
-To execute the program it is necessary to run the main script and give it the path of at least one fastq file. The main script is called ***plantVirusDetectionV2.py*** and it's located in the folder ***Scripts***. The structure if the command is as follows:
+To execute the program it is necessary to run the main script and give it the path of at least one fastq file. The main script is called ***plantVirusDetectionV2.py*** and it's located in the folder ***Scripts***. The structure of the command is as follows:
 
 ```markdown
 python Scripts/plantVirusDetectionV2.py -seq1 Testfiles/data.fastq
@@ -207,7 +207,7 @@ Then press enter and please be patient.
 
 The program displays messages in the terminal to inform about the step it is in, at the end you can see the viruses detected in a summarized way. 
 
-The results folder looks like this:
+You can find the results in the *Testfiles* folder, and there will be the *Results_data* folder that should look like this:
 
 ![Structure](/images/result_folder.PNG)
 
