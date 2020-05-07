@@ -115,6 +115,14 @@ Python 3.7 (or superior)
 
 <ins>Important</ins>: *If you have a version lower than Python 3, the tool may not work correctly.*
 
+If you get an **error** like:
+
+```markdown
+"python" is not recognized as an internal or external command, operable program or batch file.
+```
+
+Use the same command, but instead of **python** try **py**. A third option is to try **python3**. If none of the previous solutions work, check the troubleshooting section.
+
 **3. R project**
 
 To download [R project](https://cran.r-project.org/mirrors.html) please choose your preferred CRAN mirror in the official page and then select the correct version for you operative system.
