@@ -7,7 +7,7 @@
    
 2. [Installation](#Installation)  
    2.1. [Prerequisites](#Prerequisites)   
-   2.2. [Downloading project](#Download)
+   2.2. [Download](#Download)
   
 3. [Tutorial](#Tutorial)  
 
@@ -86,9 +86,13 @@ Sequence alignment is done through BLAST, the algorithms for automatic execution
 
 **1. BLAST+**
 
-Please go to official [BLAST+](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download) page and install the correct version for you operative system. To verify that the tool works correctly, enter the command terminal and type: *blastn*
+Please go to official [BLAST+](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download) page and install the correct version for you operative system. To verify that the tool works correctly, enter to the terminal or the command prompt and type: 
 
-The installation was successful if you get the following message:
+```sh
+blastn
+```
+
+The installation was **successful** if you get the following message:
 
 ```markdown
 BLAST query/options error : Either a BLAST database or subject sequence(s) must be specified
@@ -97,7 +101,7 @@ Please refer to the BLAST+ user manual.
 
 **2. Python**
 
-Please go to official [Python](https://www.python.org/downloads/) page and install the correct version (3.7+) for you operative system. To verify that the tool works correctly, enter the command terminal and type: 
+Please go to official [Python](https://www.python.org/downloads/) page and install the correct version (3.7+) for you operative system. To verify that the tool works correctly, enter to the terminal or the command prompt and type: 
 
 ```sh
 python  --version
@@ -109,7 +113,7 @@ The installation was successful if you get a message like:
 Python 3.7 (or superior)
 ```
 
-*_Important_*: If you have a version lower than Python 3, the tool may not work correctly.*
+<ins>Important</ins>: *If you have a version lower than Python 3, the tool may not work correctly.*
 
 **3. R project**
 
@@ -200,7 +204,7 @@ You must obtain the following information:
 
 ![Structure](/images/help.png)
 
-If you get an error like:
+If you get an **error** like:
 
 ```markdown
 "python" is not recognized as an internal or external command, operable program or batch file.
@@ -208,15 +212,23 @@ If you get an error like:
 
 Use the same command, but instead of **python** try **py**. A third option is to try **python3**. If none of the previous solutions work, check the troubleshooting section.
 
-To execute the program it is necessary to run the main script and give it the path of at least one fastq file. The main script is called ***plantVirusDetectionV2.py*** and it's located in the folder ***Scripts***. The structure of the command is as follows:
+**Execution**
+
+To execute the program it is necessary to run the main script and give it the path of at least one fastq file. The main script is called ***plantVirusDetectionV2.py*** and it's located in the folder ***Scripts***. 
+
+The following command is used to run the test data that comes with the program.
 
 ```markdown
 python Scripts/plantVirusDetectionV2.py -seq1 Testfiles/data.fastq
 ```
 
-Then press enter and please be patient. 
+Then press enter and please be patient. The program is running correctly if you see something like:
 
-The program displays messages in the terminal to inform about the step it is in, at the end you can see the viruses detected in a summarized way. 
+![Structure](/images/start.PNG)
+
+The program displays messages in the terminal to inform about the step it is in, at the end you can see the viruses detected in a summarized way like:
+
+![Structure](/images/end.PNG)
 
 You can find the results in the *Testfiles* folder, and there will be the *Results_data* folder that should look like this:
 
@@ -224,29 +236,63 @@ You can find the results in the *Testfiles* folder, and there will be the *Resul
 
 With the previous results you can continue with the graphing section.
 
-You can also use a database as a filter, this will make the process more efficient if the host of the sample is potato. The command would be like this:
+**Additional information**
 
-```markdown
-python Scripts/plantVirusDetectionV2.py -seq1 Testfiles/data.fastq -hostdb Potato_masked 
-```
+The current version of PVDP works with mate-pairs and unpaired reads from Illumina sequencing technology (FASTQ.GZ, FASTQ or FASTA formats are supported). TThe program can receive multiple arguments, the most essential cases are described below:
+
+*<ins>Case 1</ins>: Unpaired reads*
+
+>python Scripts/plantVirusDetectionV2.py -seq1 Path/to/file
+
+*<ins>Case 2</ins>: Mate-pairs reads*
+
+>python Scripts/plantVirusDetectionV2.py -seq1 Path/to/file -seq2 Path/to/file/mate
+
+*<ins>Case 3</ins>: Mate-pairs or unpaired reads, using a host database as a filter. Currently only one database belonging to potato is available. This allows the process to be more efficient.*
+
+>python Scripts/plantVirusDetectionV2.py -seq1 Path/to/file -hostdb Potato_masked
+
+>It is not necessary to specify the path of Potato_masked, the program searches by default in the Databases folder. It is also possible to use a specific database by entering the appropriate files in the aforementioned folder.
+
+*<ins>Case 4</ins>: Mate-pairs or unpaired reads, using a specific amount of reads, e.g. 1000000. It is recommended to use this parameter when the data is very large and also to carry out an initial exploration of it.*
+
+>python Scripts/plantVirusDetectionV2.py -seq1 Path/to/file -subset 1000000
+
+*<ins>Case 5</ins>: Mate-pairs or unpaired reads, using a specific amount of processors, e.g. 5. The default quantity is 2.*
+
+>python Scripts/plantVirusDetectionV2.py -seq1 Path/to/file -num_threads 5
+
+More information about the arguments is available by executing the following command:
+
+>python Scripts/plantVirusDetectionV2.py --help
 
 **Graphing**
 
-When the process ends it is possible to create the graphic report in html format. To do this you need to open the file **VirusReport.Rmd** in Rstudio and have the required packages installed. 
+When the process ends it is possible to create the graphic report in html format. To do this you need to open the file **VirusReport.Rmd** in Rstudio and have the required packages installed. **VirusReport.Rmd** is located in the **Scripts** folder.
 
-First modify the *path_to_files* variable, specifying the full path to the Tables folder (1) found in the results folder, Run All (2) and Knit the document (3).
+First modify the ***path_to_files*** variable directly in the script (line 14), specifying the full path to the Tables folder (1) found in the results folder that can be found in **Testfiles/Results_data**. Make sure that the path ends with a slash, otherwise you may get an error, i.e. **../Tables/**.
 
-![Structure](/images/rstudio.PNG)
+![Structure](/images/rstudio1.PNG)
 
-Make sure that the path (1) ends with a slash, otherwise you may get an error, i.e. **../Tables/**.
+This step is crucial, if the correct path is not placed, the program will not run; the associated error is like:
+
+```
+Error in file(file, "rt") : unable to open connection
+```
+
+In the next step the script must be run from **Run All** (2).
+
+![Structure](/images/rstudio2.PNG)
 
 When you use Run All (2) you should see a green loading bar at the bottom right like this:
 
 ![Structure](/images/done.PNG)
 
-The process ends once the bar loads completely. Then it is possible to Knit (3) the document and if everything was satisfactory a window will open with the respective report.
+The process ends once the bar loads completely. Then it is possible to **Knit** (3) the document and if everything was satisfactory a window will open with the respective report.
 
-You can close the window, the report is saved in the **Scripts** folder, under the name of *VirusReport.html*.
+![Structure](/images/rstudio3.PNG)
+
+You can close the window, the report is saved in the **Scripts** folder, under the name of *VirusReport.html*. It is recommended to change the file name or change folder, because if the script is executed with another data set it will be overwritten.
 
 ----
 
@@ -257,6 +303,10 @@ You can close the window, the report is saved in the **Scripts** folder, under t
 > python **AND** py **AND** python3 ... is not recognized as an internal or external command, operable program or batch file.
 
 You may have python installed through Anaconda, in this case you must open the Anaconda prompt.
+
+- MemoryError in Step 1
+
+> You must use the -subset argument, because the available ram memory cannot process the total size of the data.
 
 <a name="Support"></a>
 ### Support or Contact
