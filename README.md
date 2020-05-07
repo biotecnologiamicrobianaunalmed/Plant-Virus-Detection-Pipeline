@@ -272,7 +272,7 @@ When the process ends it is possible to create the graphic report in html format
 
 First modify the ***path_to_files*** variable directly in the script (line 14), specifying the full path to the Tables folder (1) found in the results folder that can be found in **Testfiles/Results_data**. Make sure that the path ends with a slash, otherwise you may get an error, i.e. **../Tables/**.
 
-![Structure](/images/rstudio1.PNG)
+![Structure](/images/rstudio1.png)
 
 This step is crucial, if the correct path is not placed, the program will not run; the associated error is like:
 
@@ -282,7 +282,7 @@ Error in file(file, "rt") : unable to open connection
 
 In the next step the script must be run from **Run All** (2).
 
-![Structure](/images/rstudio2.PNG)
+![Structure](/images/rstudio2.png)
 
 When you use Run All (2) you should see a green loading bar at the bottom right like this:
 
@@ -290,7 +290,7 @@ When you use Run All (2) you should see a green loading bar at the bottom right 
 
 The process ends once the bar loads completely. Then it is possible to **Knit** (3) the document and if everything was satisfactory a window will open with the respective report.
 
-![Structure](/images/rstudio3.PNG)
+![Structure](/images/rstudio3.png)
 
 You can close the window, the report is saved in the **Scripts** folder, under the name of *VirusReport.html*. It is recommended to change the file name or change folder, because if the script is executed with another data set it will be overwritten.
 
