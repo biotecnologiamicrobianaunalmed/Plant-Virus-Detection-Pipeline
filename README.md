@@ -238,13 +238,13 @@ With the previous results you can continue with the graphing section.
 
 **Additional information**
 
-The current version of PVDP works with mate-pairs and unpaired reads from Illumina sequencing technology (FASTQ.GZ, FASTQ or FASTA formats are supported). TThe program can receive multiple arguments, the most essential cases are described below:
+The current version of PVDP works with mate-pairs and unpaired reads from Illumina sequencing technology (FASTQ.GZ, FASTQ or FASTA formats are supported). The program can receive multiple arguments, the most essential cases are described below:
 
-*<ins>Case 1</ins>: Unpaired reads*
+*<ins>Case 1</ins>: Unpaired reads.*
 
 >python Scripts/plantVirusDetectionV2.py -seq1 Path/to/file
 
-*<ins>Case 2</ins>: Mate-pairs reads*
+*<ins>Case 2</ins>: Mate-pairs reads.*
 
 >python Scripts/plantVirusDetectionV2.py -seq1 Path/to/file -seq2 Path/to/file/mate
 
