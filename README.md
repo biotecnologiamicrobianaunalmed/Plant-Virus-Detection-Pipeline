@@ -74,6 +74,7 @@ Additionally, the execution time and the maximum peak of ram were evaluated for 
 
 ![Memory Profile](/images/peak_physalis.png)
 
+----
 
 <a name="Installation"></a>
 ### Installation
@@ -96,13 +97,19 @@ Please refer to the BLAST+ user manual.
 
 **2. Python**
 
-Please go to official [Python](https://www.python.org/downloads/) page and install the correct version (3.7+) for you operative system. To verify that the tool works correctly, enter the command terminal and type: python  \--version
+Please go to official [Python](https://www.python.org/downloads/) page and install the correct version (3.7+) for you operative system. To verify that the tool works correctly, enter the command terminal and type: 
 
-The installation was successful if you get the following message:
+```sh
+python  --version
+```
+
+The installation was successful if you get a message like:
 
 ```markdown
 Python 3.7 (or superior)
 ```
+
+*_Important_*: If you have a version lower than Python 3, the tool may not work correctly.*
 
 **3. R project**
 
@@ -118,6 +125,7 @@ The following packages need to be installed:
 - ggplot2
 - RColorBrewer
 - knitr
+- rmarkdown
 ```
 <!---
 To verify that the graphing section is working correctly download the consolidation of [result tables](https://github.com/biotecnologiamicrobianaunalmed/Plant-Virus-Detection-Package/blob/master/results_rna_physalis_peruviana.zip). Then open RStudio, configure the working directory correctly and specify the path in which the main file (***List_of_tables_rna_physalis_peruviana_1_rna_physalis_peruviana_2_nr.tsv***) is located.--->
@@ -144,6 +152,7 @@ To verify that the graphing section is working correctly download the consolidat
 
 <!---![Viral Result](/images/vr5.png)--->
 
+----
 <a name="Download"></a>
 ### Download
 
@@ -173,6 +182,8 @@ Once the download is complete, locate the file in your preferred folder and unzi
 Now you can continue with the next section.
 
 ***The last update of the viral database was made on April, 2020.***
+
+----
 
 <a name="Tutorial"></a>
 ### Tutorial
@@ -219,7 +230,7 @@ You can also use a database as a filter, this will make the process more efficie
 python Scripts/plantVirusDetectionV2.py -seq1 Testfiles/data.fastq -hostdb Potato_masked 
 ```
 
-**GRAPHING**
+**Graphing**
 
 When the process ends it is possible to create the graphic report in html format. To do this you need to open the file **VirusReport.Rmd** in Rstudio and have the required packages installed. 
 
@@ -237,6 +248,7 @@ The process ends once the bar loads completely. Then it is possible to Knit (3) 
 
 You can close the window, the report is saved in the **Scripts** folder, under the name of *VirusReport.html*.
 
+----
 
 **TROUBLESHOOTING**
 
