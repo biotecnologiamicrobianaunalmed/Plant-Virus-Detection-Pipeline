@@ -116,7 +116,7 @@ If you get an **error** like:
 "python" is not recognized as an internal or external command, operable program or batch file.
 ```
 
-Use the same command, but instead of **python** try **py**. A third option is to try **python3**. If none of the previous solutions work, check the troubleshooting section.
+Use the same command, but instead of **python** try **py**. A third option is to try **python3**. If none of the previous solutions work, check the Issues section.
 
 **3. R project**
 
@@ -189,7 +189,7 @@ If you get an **error** like:
 "python" is not recognized as an internal or external command, operable program or batch file.
 ```
 
-Use the same command, but instead of **python** try **py**. A third option is to try **python3**. If none of the previous solutions work, check the troubleshooting section.
+Use the same command, but instead of **python** try **py**. A third option is to try **python3**. If none of the previous solutions work, check the Issues section.
 
 **Execution**
 
