@@ -47,6 +47,7 @@ FASTA file is composed of two lines. [1] This line includes a unique ID. [2] Thi
 ### Pipeline
 
 ![Pipeline](/images/pvdp_pipeline.png)
+
 *Out of date graphic*
 
 <a name="Performance"></a>
@@ -207,7 +208,7 @@ Then press enter and please be patient. The program displays messages in the ter
 It is possible that an insufficient RAM memory error occurs, the program stops and at the end of step 1 "MemoryError" is observed, in this case it is necessary to use the -subset argument (see case 4). The recommended is three to five million sequences for common computer equipment. To see the most common errors, check the **Issues** section at the end.
 
 
-At the end you can see the viruses detected in a summarized way like:
+If everything works correctly you can see at the end the detected viruses in a summarized way like:
 
 ![Structure](/images/end.PNG)
 
