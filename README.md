@@ -306,7 +306,3 @@ You may have python installed through Anaconda, in this case you must open the A
 ### Support or Contact
 
 Having troubles? Please contact us.
-
-### Credits
-
-Biotecnología Microbiana (COL0001119), Biotecnología Vegetal (COL0001075) de la Universidad Nacional de Colombia sede Medellín, el grupo en Ciencias Básicas (COL0002509) de la Universidad CES.
