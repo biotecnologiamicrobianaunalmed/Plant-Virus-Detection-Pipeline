@@ -16,9 +16,7 @@
 <a name="Introduction"></a>
 ### Introduction
 
-The low yields of many crops around the world are explained, among other aspects, by the lack of good phytosanitary management practices in addition to the widespread use of planting material not certified for its viral health. The use of next generation sequencing (NGS) has allowed the complete or partial characterization of a significant number of viral variants that infect crops in different regions of the world.
-
-This tool was carried out in order to strengthen the programs of genetic improvement, quarantine surveillance and certification of planting material. This package is free to use and is specific for the diagnosis of viruses in plants. 
+*...Developing...*
 
 <a name="supported"></a>
 ### Supported files
@@ -49,30 +47,26 @@ FASTA file is composed of two lines. [1] This line includes a unique ID. [2] Thi
 ### Pipeline
 
 ![Pipeline](/images/pvdp_pipeline.png)
+*Out of date graphic*
 
 <a name="Performance"></a>
 ### Performance
 
-The following results were obtained by performing the analysis on an Intel Core i5 9500 CPU @ 3.00 GHz * 6, 16 GB RAM, using the package of Python [Memory Profiler](https://pypi.org/project/memory-profiler/).
+The test data (*data.fastq*) was tested on the following computer equipment:
 
-| Data set | Disk space (MB) | Time (m) | Peak RAM usage (GB) | Additional disk space required (MB) |  
-| :---: | :---: | :---: | :---: | :---: |
-| rna_physalis_peruviana.fastq (paired) | 54 | 5.8 | 2.62 | 17.6 |
+| Operating system | Processor| RAM | Total execution time (s) |  
+| :---: | :---: | :---: | :---: |
+| Windows 7 64-bit | Intel Core i5-2300 CPU @ 2,8 GHz | 8 GB | 509 |
+| Windows 10 64-bit | Intel Core i5-6200 CPU @ 2,3 GHz | 4 GB | 954 |
+| Ubuntu 18.04.4 LTS | Intel core i3-7100 CPU @ 2,4 GHz | 4 GB | 590 |
+| Windows 10 64-bit | Intel core i3-4005 CPU @ 1.7 GHz | 4 GB | 1990 |
+| Ubuntu 18.04.4 LTS | Intel Core i5-2300 CPU @ 2,8 GHz | 8 GB | 432 |
 
-![Memory Profile](/images/memory_profile_physalis.png)
+Additionally, a data set was evaluated modifying the sequence length, the maximum peak of RAM memory and the total execution time were monitored. The results are summarized below:
 
+![Structure](/images/seq1.png)
 
-| Data set | Disk space (MB) | Time (m) | Peak RAM usage (GB) | Additional disk space required (MB) |  
-| :---: | :---: | :---: | :---: | :---: |
-| rna_solanum_phureja.fastq.gz | 1848 | 144 | 2 | 473.3 |
-
-![Memory Profile](/images/memory_profile_phureja.png)
-
-Additionally, the execution time and the maximum peak of ram were evaluated for a set of NGS data obtained from leaf tissue of physalis peruviana. Seven data sizes were evaluated, each interval was one million reads. The following graphs summarize the information obtained:
-
-![Memory Profile](/images/time_physalis.png)
-
-![Memory Profile](/images/peak_physalis.png)
+![Structure](/images/seq2.png)
 
 ----
 
@@ -139,30 +133,6 @@ The following packages need to be installed:
 - knitr
 - rmarkdown
 ```
-<!---
-To verify that the graphing section is working correctly download the consolidation of [result tables](https://github.com/biotecnologiamicrobianaunalmed/Plant-Virus-Detection-Package/blob/master/results_rna_physalis_peruviana.zip). Then open RStudio, configure the working directory correctly and specify the path in which the main file (***List_of_tables_rna_physalis_peruviana_1_rna_physalis_peruviana_2_nr.tsv***) is located.--->
-
-<!---![Specify Path](/images/specify_path.png)--->
-
-<!---Then run the program and view the generated file.---> 
-
-<!---![Run All](/images/run_all.png)--->
-
-<!---![Preview](/images/preview.png)--->
-
-<!---This file can be opened in the browser and saved by pressing print.--->
-
-<!---The generated report looks as follows:--->
-
-<!---![Viral Result](/images/vr1.png)--->
-
-<!---![Viral Result](/images/vr2.png)--->
-
-<!---![Viral Result](/images/vr3.png)--->
-
-<!---![Viral Result](/images/vr4.png)--->
-
-<!---![Viral Result](/images/vr5.png)--->
 
 ----
 <a name="Download"></a>
@@ -230,11 +200,14 @@ The following command is used to run the test data that comes with the program.
 python Scripts/plantVirusDetectionV2.py -seq1 Testfiles/data.fastq
 ```
 
-Then press enter and please be patient. The program is running correctly if you see something like:
+Then press enter and please be patient. The program displays messages in the terminal to inform about the step it is in; it is running correctly if you see something like:
 
 ![Structure](/images/start.PNG)
 
-The program displays messages in the terminal to inform about the step it is in, at the end you can see the viruses detected in a summarized way like:
+It is possible that an insufficient RAM memory error occurs, the program stops and at the end of step 1 "MemoryError" is observed, in this case it is necessary to use the -subset argument (see case 4). The recommended is three to five million sequences for common computer equipment. To see the most common errors, check the **Issues** section at the end.
+
+
+At the end you can see the viruses detected in a summarized way like:
 
 ![Structure](/images/end.PNG)
 
@@ -256,17 +229,17 @@ The current version of PVDP works with mate-pairs and unpaired reads from Illumi
 
 >python Scripts/plantVirusDetectionV2.py -seq1 Path/to/file -seq2 Path/to/file/mate
 
-*<ins>Case 3</ins>: Mate-pairs or unpaired reads, using a host database as a filter. Currently only one database belonging to potato is available. This allows the process to be more efficient.*
+*<ins>Case 3</ins>: Mate-pairs **or** unpaired reads, using a host database as a filter. Currently only one database belonging to potato is available. This allows the process to be more efficient.*
 
 >python Scripts/plantVirusDetectionV2.py -seq1 Path/to/file -hostdb Potato_masked
 
 >It is not necessary to specify the path of Potato_masked, the program searches by default in the Databases folder. It is also possible to use a specific database by entering the appropriate files in the aforementioned folder.
 
-*<ins>Case 4</ins>: Mate-pairs or unpaired reads, using a specific amount of reads, e.g. 1000000. It is recommended to use this parameter when the data is very large and also to carry out an initial exploration of it.*
+*<ins>Case 4</ins>: Mate-pairs **or** unpaired reads, using a specific amount of reads, e.g. 1000000. It is recommended to use this parameter when the data is very large and also to carry out an initial exploration of it.*
 
 >python Scripts/plantVirusDetectionV2.py -seq1 Path/to/file -subset 1000000
 
-*<ins>Case 5</ins>: Mate-pairs or unpaired reads, using a specific amount of processors, e.g. 5. The default quantity is 2.*
+*<ins>Case 5</ins>: Mate-pairs **or** unpaired reads, using a specific amount of processors, e.g. 5. The default quantity is 2.*
 
 >python Scripts/plantVirusDetectionV2.py -seq1 Path/to/file -num_threads 5
 
@@ -304,19 +277,35 @@ You can close the window, the report is saved in the **Scripts** folder, under t
 
 ----
 
-**TROUBLESHOOTING**
+**Issues**
 
-- Windows systems:
+- **Windows systems**:
 
 > python **AND** py **AND** python3 ... is not recognized as an internal or external command, operable program or batch file.
 
 You may have python installed through Anaconda, in this case you must open the Anaconda prompt.
 
-- MemoryError in Step 1
+- **MemoryError in Step 1**
 
 > You must use the -subset argument, because the available ram memory cannot process the total size of the data.
+
+- **The program does not advance from step 1**
+
+> Please check that the format of the [supported files](#supported) is correct. The fastq format may not be in the specified format.
+
+- **Username or folders**
+
+> Please do not use spaces in the names assigned to folders or even the username, the program will not work.
+
+- **ImportError: No moduled named statistics OR ValueError: math domain error**
+
+> Your version of python is lower than the third. Please update it.
 
 <a name="Support"></a>
 ### Support or Contact
 
 Having troubles? Please contact us.
+
+### Credits
+
+Biotecnología Microbiana (COL0001119), Biotecnología Vegetal (COL0001075) de la Universidad Nacional de Colombia sede Medellín, el grupo en Ciencias Básicas (COL0002509) de la Universidad CES.
