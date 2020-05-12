@@ -218,6 +218,8 @@ You can find the results in the *Testfiles* folder, and there will be the *Resul
 
 With the previous results you can continue with the graphing section.
 
+<ins>Hint:</ins> When analyzing your own files it is recommended to put the files in the Testfiles folder or directly in the pvdp folder, otherwise it is necessary to specify the full path of where they are located.
+
 **Additional information**
 
 The current version of PVDP works with mate-pairs and unpaired reads from Illumina sequencing technology (FASTQ.GZ, FASTQ or FASTA formats are supported). The program can receive multiple arguments, the most essential cases are described below:
@@ -247,6 +249,8 @@ The current version of PVDP works with mate-pairs and unpaired reads from Illumi
 More information about the arguments is available by executing the following command:
 
 >python Scripts/plantVirusDetectionV2.py --help
+
+*Each argument is unique, there is no need to repeat it when analyzing mated paires reads.*
 
 **Graphing**
 
