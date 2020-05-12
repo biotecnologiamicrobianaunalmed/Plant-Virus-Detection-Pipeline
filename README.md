@@ -274,7 +274,7 @@ When you use Run All (2) you should see a green loading bar at the bottom right 
 
 ![Structure](/images/done.PNG)
 
-The process ends once the bar loads completely. Then it is possible to **Knit** (3) the document and if everything was satisfactory a window will open with the respective report.
+The process ends once the bar loads completely. Then it is possible to **Knit** (3) the document and if everything was satisfactory a window will open with the respective report. If a window doesn't open, explore the Knit options (down arrow) and select "Knit to html".
 
 ![Structure](/images/rstudio3.png)
 
