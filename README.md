@@ -1,4 +1,4 @@
-# PVDP 1.0 Manual
+# PVDP 1.0.1 Manual
 
 1. [Introduction](#Introduction)  
    1.1. [Supported files](#supported)  
@@ -158,7 +158,7 @@ Once the download is complete, locate the file in your preferred folder and unzi
        >PlantVirusesDB_0420v4_masked.(naa, nab, nac, nhr, nin, nog, nsd, nsi, nsq).
        >Potato_masked.(naa, nab, nac, nhr, nin, nog, nsd, nsi, nsq).
        
------>Testfiles
+----->Files
        >data.fastq
 ```
 
@@ -198,7 +198,7 @@ To execute the program it is necessary to run the main script and give it the pa
 The following command is used to run the test data that comes with the program.
 
 ```markdown
-python Scripts/plantVirusDetectionV2.py -seq1 Testfiles/data.fastq
+python Scripts/plantVirusDetectionV2.py -seq1 Files/data.fastq
 ```
 
 Then press enter and please be patient. The program displays messages in the terminal to inform about the step it is in; it is running correctly if you see something like:
@@ -212,13 +212,13 @@ If everything works correctly you can see at the end the detected viruses in a s
 
 ![Structure](/images/end.PNG)
 
-You can find the results in the *Testfiles* folder, and there will be the *Results_data* folder that should look like this:
+You can find the results in the *Files* folder, and there will be the *Results_data* folder that should look like this:
 
 ![Structure](/images/result_folder.PNG)
 
 With the previous results you can continue with the graphing section.
 
-<ins>Hint:</ins> When analyzing your own files it is recommended to put the files in the Testfiles folder or directly in the pvdp folder, otherwise it is necessary to specify the full path of where they are located.
+<ins>Hint:</ins> When analyzing your own files it is recommended to put the files in the Files folder or directly in the pvdp folder, otherwise it is necessary to specify the full path of where they are located.
 
 **Additional information**
 
@@ -256,7 +256,7 @@ More information about the arguments is available by executing the following com
 
 When the process ends it is possible to create the graphic report in html format. To do this you need to open the file **VirusReport.Rmd** in Rstudio and have the required packages installed. **VirusReport.Rmd** is located in the **Scripts** folder.
 
-First modify the ***path_to_files*** variable directly in the script (line 14), specifying the full path to the Tables folder (1) found in the results folder that can be found in **Testfiles/Results_data**. Make sure that the path ends with a slash, otherwise you may get an error, i.e. **../Tables/**.
+First modify the ***path_to_files*** variable directly in the script (line 14), specifying the full path to the Tables folder (1) found in the results folder that can be found in **Files/Results_data**. Make sure that the path ends with a slash, otherwise you may get an error, i.e. **../Tables/**.
 
 ![Structure](/images/rstudio1.png)
 
