@@ -53,7 +53,7 @@ FASTA file is composed of two lines. [1] This line includes a unique ID. [2] Thi
 <a name="Performance"></a>
 ### Performance
 
-The test data (*data.fastq*) was tested on the following computer equipment:
+The test data (*data.fastq [1e+06 reads]*) was tested on the following computer equipment:
 
 | Operating system | Processor| RAM | Total execution time (s) |  
 | :---: | :---: | :---: | :---: |
@@ -63,11 +63,11 @@ The test data (*data.fastq*) was tested on the following computer equipment:
 | Windows 10 64-bit | Intel core i3-4005 CPU @ 1.7 GHz | 4 GB | 1990 |
 | Ubuntu 18.04.4 LTS | Intel Core i5-2300 CPU @ 2,8 GHz | 8 GB | 432 |
 
-Additionally, a data set was evaluated modifying the sequence length, the maximum peak of RAM memory and the total execution time were monitored. The results are summarized below:
+Additionally, a data set was evaluated modifying the sequence length, the total execution time were monitored. The results are summarized below:
 
-![Structure](/images/seq1.png)
+![Structure](/images/timeVlength.png)
 
-![Structure](/images/seq2.png)
+This test was carried out on the following computer equipment, Windows 7 64-bit / Intel Core i5-2300 CPU @ 2,8 GHz / 8 GB RAM. 
 
 ----
 
