@@ -174,6 +174,8 @@ Now you can continue with the next section.
 <!---!![Structure](/images/test_files.png)--->
 Open the terminal or the command prompt and go to the folder where the downloaded files are located.
 
+<ins>Help:</ins> If you want to know how to move between folders in the terminal or command prompt, check the following [link](https://github.com/biotecnologiamicrobianaunalmed/terminal-basics).
+
 You can access the program's help by writing the following line:
 
 ```markdown
