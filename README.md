@@ -62,6 +62,7 @@ The test data (*data.fastq [1e+06 reads]*) was tested on the following computer 
 | Ubuntu 18.04.4 LTS | Intel core i3-7100 CPU @ 2,4 GHz | 4 GB | 590 |
 | Windows 10 64-bit | Intel core i3-4005 CPU @ 1.7 GHz | 4 GB | 1990 |
 | Ubuntu 18.04.4 LTS | Intel Core i5-2300 CPU @ 2,8 GHz | 8 GB | 432 |
+| Windows 10 64-bit | Intel core i3-3217 CPU @ 1.8 GHz | 4 GB | 1595 |
 
 Additionally, a data set was evaluated modifying the sequence length, the total execution time were monitored. The results are summarized below:
 
