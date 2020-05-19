@@ -220,7 +220,7 @@ You can find the results in the *Files* folder, and there will be the *Results_d
 
 With the previous results you can continue with the graphing section.
 
-<ins>Hint:</ins> When analyzing your own files it is recommended to put the files in the Files folder or directly in the pvdp folder, otherwise it is necessary to specify the full path of where they are located.
+<ins>Tip:</ins> When analyzing your own files it is recommended to put the files in the **Files** folder or directly in the pvdp folder, otherwise it is necessary to specify the full path of where they are located.
 
 **Additional information**
 
