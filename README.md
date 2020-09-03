@@ -142,6 +142,8 @@ The results folder includes eight tables in tsv (tab-separated values) format th
 
 <ins>Tip:</ins> When analyzing your own files it is recommended to put the files in the **Files** folder or directly in the pvdp folder, otherwise it is necessary to specify the full path of where they are located.
 
+----
+
 <a name="Examples"></a>
 ### PVDP examples
 
