@@ -1,19 +1,12 @@
 # PVDP 1.0.1 Manual
 
-1. [Introduction](#Introduction)  
-
+1. [Introduction](#Introduction)
 2. [Pipeline](#Pipeline)
-
 3. [Prerequisites](#Prerequisites)
-
-4. [Download](#Download)
-  
-5. [Execution](#Execution)  
-
-6. [Optional arguments](#PVPD examples) 
-
-7. [Issues](#Issues) 
-
+4. [Download](#Download)  
+5. [Execution](#Execution)
+6. [Optional arguments](#Examples)
+7. [Issues](#Issues)
 8. [Support or contact](#Support)
 
 <a name="Introduction"></a>
@@ -30,7 +23,7 @@ The package runs locally in standard desktop or laptop computers under Windows, 
 
 Actually the scripts can process single- or paired-end data in fasta or fastq formats, and can also process data compressed in gz format.
 
-![Pipeline](/images/pvdp.jpg)
+![Pipeline](/assets/pvdp.jpg)
 
 ----
 
@@ -149,7 +142,7 @@ The results folder includes eight tables in tsv (tab-separated values) format th
 
 <ins>Tip:</ins> When analyzing your own files it is recommended to put the files in the **Files** folder or directly in the pvdp folder, otherwise it is necessary to specify the full path of where they are located.
 
-<a name="PVDP examples"></a>
+<a name="Examples"></a>
 ### PVDP examples
 
 The current version of PVDP works with mate-pairs and unpaired reads from Illumina sequencing technology (FASTQ.GZ, FASTQ or FASTA formats are supported). The program can receive multiple arguments, the most essential cases are described below:
@@ -196,6 +189,8 @@ The current version of PVDP works with mate-pairs and unpaired reads from Illumi
 
 *Each argument is unique, but they can be combined at will.*
 
+----
+
 <a name="HTML report"></a>
 ### Generating user-friendly HTML report with RStudio
 
@@ -203,7 +198,7 @@ When the process ends it is possible to create the graphic report in html format
 
 First modify the ***path_to_files*** variable directly in the script (line 14), specifying the full path to the Tables folder (1) found in the results folder that can be found in **Files/Results_data**. Make sure that the path ends with a slash, otherwise you may get an error, i.e. **../Tables/**.
 
-![Structure](/images/rstudio1.png)
+![Structure](/assets/rstudio1.png)
 
 This step is crucial, if the correct path is not placed, the program will not run; the associated error is like:
 
@@ -213,15 +208,15 @@ Error in file(file, "rt") : unable to open connection
 
 In the next step the script must be run from **Run All** (2).
 
-![Structure](/images/rstudio2.png)
+![Structure](/assets/rstudio2.png)
 
 When you use Run All (2) you should see a green loading bar at the bottom right like this:
 
-![Structure](/images/done.PNG)
+![Structure](/assets/done.PNG)
 
 The process ends once the bar loads completely. Then it is possible to **Knit** (3) the document and if everything was satisfactory a window will open with the respective report. If a window doesn't open, explore the Knit options (down arrow) and select "Knit to html".
 
-![Structure](/images/rstudio3.png)
+![Structure](/assets/rstudio3.png)
 
 You can close the window, the report is saved in the **Scripts** folder, under the name of *VirusReport.html*. It is recommended to change the file name or change folder, because if the script is executed with another data set it will be overwritten.
 
@@ -259,6 +254,8 @@ You can close the window, the report is saved in the **Scripts** folder, under t
     ```markdown
     Your version of python is lower than the third. Please update it.
     ```
+
+----
 
 <a name="Support"></a>
 ### Support or Contact
