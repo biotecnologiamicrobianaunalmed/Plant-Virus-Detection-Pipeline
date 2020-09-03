@@ -1,84 +1,43 @@
 # PVDP 1.0.1 Manual
 
 1. [Introduction](#Introduction)  
-   1.1. [Supported files](#supported)  
-   1.2. [Pipeline](#Pipeline)  
-   1.3. [Performance](#Performance)
-   
-2. [Installation](#Installation)  
-   2.1. [Prerequisites](#Prerequisites)   
-   2.2. [Download](#Download)
-  
-3. [Tutorial](#Tutorial)  
 
-4. [Support or contact](#Support)
+2. [Pipeline](#Pipeline)
+
+3. [Prerequisites](#Prerequisites)
+
+4. [Download](#Download)
+  
+5. [Execution](#Execution)  
+
+6. [Optional arguments](#PVPD examples) 
+
+7. [Issues](#Issues) 
+
+8. [Support or contact](#Support)
 
 <a name="Introduction"></a>
 ### Introduction
 
-*...Developing...*
-
-<a name="supported"></a>
-### Supported files
-
-The current version supports paired-end reads and unpaired reads, products of massively parallel sequencing technology [NGS](https://www.illumina.com/science/technology/next-generation-sequencing.html). The files can be in two formats essentially:
-
-- FASTQ or FASTQ.GZ:  
-
->@seq_ID                              [1]
->
->CTCAGCTAAATACTTTGACACCNGTANNANNNN    [2]
-> 
-> \+                                  [3]
->
->BBDEBDDDDHHHHFHEEEEEEEE#3AC#####   [4]
-
-FASTQ file is composed of four lines. [1] This line includes a unique ID and information such as flow cell lane information. [2] This line includes the nucleotides of the sequence. [3] A separator item (+). [4] This line includes quality values about sequences; this quality is denominated Phred Score and is described in ASCII symbols, every simbol has a respective number asociated and a higher number signifies higher acurracy of each nucleotide.
-
-- FASTA
-
-> \>seq_ID                            [1]
->
->ACTGCTCGACGATGACTGCATGCTGCACTGTCA    [2]
-
-FASTA file is composed of two lines. [1] This line includes a unique ID. [2] This line includes the nucleotides of the sequence.
+High-throughput sequencing methods are becoming an essential tool in disease management programs. Unfortunately, the implementation of these techniques in developing countries can be hindered by a limited availability of well-trained bioinformaticians and/or high-performance computing centers that can process and analyze the data with reliability and speed. In this work we present a stand-alone plant virus detection pipeline (PVDP) optimized for the surveillance of potato viruses but also useful in other plant hosts. This open source pipeline runs under python and includes a curated database of plant viruses in addition to an R script for presenting results as a user-friendly html report. 
 
 <a name="Pipeline"></a>
 ### Pipeline
 
-![Pipeline](/images/pvdp_pipeline.png)
+The plant virus detection pipeline consists of four python scripts (nonRedundantSequences.py, genomeBLAST.py, virusBLAST.py and outputTables.py) that can be executed in a single step using the PlantVirusDetection.py; plain results can also be converted into a graphical html report using the virusReport.R script in Rstudio.
 
-*Out of date graphic*
+The package runs locally in standard desktop or laptop computers under Windows, Linux and macOS using the command-line interface. Also includes several options that allow the user to analyze subsets of data, and the use of filtering parameters and databases.
 
-<a name="Performance"></a>
-### Performance
+Actually the scripts can process single- or paired-end data in fasta or fastq formats, and can also process data compressed in gz format.
 
-The test data (*data.fastq [1e+06 reads]*) was tested on the following computer equipment:
-
-| Operating system | Processor| RAM | Total execution time (s) |  
-| :---: | :---: | :---: | :---: |
-| Windows 7 64-bit | Intel Core i5-2300 CPU @ 2,8 GHz | 8 GB | 509 |
-| Windows 10 64-bit | Intel Core i5-6200 CPU @ 2,3 GHz | 4 GB | 954 |
-| Ubuntu 18.04.4 LTS | Intel core i3-7100 CPU @ 2,4 GHz | 4 GB | 590 |
-| Windows 10 64-bit | Intel core i3-4005 CPU @ 1.7 GHz | 4 GB | 1990 |
-| Ubuntu 18.04.4 LTS | Intel Core i5-2300 CPU @ 2,8 GHz | 8 GB | 432 |
-| Windows 10 64-bit | Intel core i3-3217 CPU @ 1.8 GHz | 4 GB | 1595 |
-
-Additionally, a data set was evaluated modifying the sequence length, the total execution time were monitored. The results are summarized below:
-
-![Structure](/images/timeVlength.png)
-
-This test was carried out on the following computer equipment, Windows 7 64-bit / Intel Core i5-2300 CPU @ 2,8 GHz / 8 GB RAM. 
+![Pipeline](/images/pvdp.jpg)
 
 ----
 
-<a name="Installation"></a>
-### Installation
-
-Sequence alignment is done through BLAST, the algorithms for automatic execution and filtering are written in Python. It is possible to interpret the result tables to generate a graphic report using Rproject and RStudio.
-
 <a name="Prerequisites"></a>
 ### Prerequisites
+
+Execution of the scripts requires a local installation of python3 (van Rossum and Drake 2009), Blast (Altschul et al. 1990) and Rstudio (R Core Team 2017; RStudio Team 2020). 
 
 **1. BLAST+**
 
@@ -91,8 +50,7 @@ blastn
 The installation was **successful** if you get the following message:
 
 ```markdown
-BLAST query/options error : Either a BLAST database or subject sequence(s) must be specified
-Please refer to the BLAST+ user manual.
+BLAST query/options error : Either a BLAST database or subject sequence(s) must be specified. Please refer to the BLAST+ user manual.
 ```
 
 **2. Python**
@@ -117,7 +75,7 @@ If you get an **error** like:
 "python" is not recognized as an internal or external command, operable program or batch file.
 ```
 
-Use the same command, but instead of **python** try **py**. A third option is to try **python3**. If none of the previous solutions work, check the Issues section.
+Use the same command, but instead of **python** try **py**. A third option is to try **python3**. It is important to remember the option that worked for the later steps. If none of the previous solutions work, check the Issues section.
 
 **3. R project**
 
@@ -137,10 +95,9 @@ The following packages need to be installed:
 ```
 
 ----
+
 <a name="Download"></a>
 ### Download
-
-Before downloading the files make sure you meet the essential [prerequisites](#Prerequisites), i.e. **Python** and **BLAST**. If you want to generate a graphic report in html format, you must also meet the additional prerequisites.
 
 You can obtain the detection package in its compressed version at the following [link](https://drive.google.com/drive/folders/1gk9KyMXeIE7wy1GjyiTgrEwD9sDhsASA?usp=sharing). It contains the run and graph scripts, the databases and a test file.
 
@@ -163,99 +120,84 @@ Once the download is complete, locate the file in your preferred folder and unzi
        >data.fastq
 ```
 
-Now you can continue with the next section.
-
 ***The last update of the viral database was made on April, 2020.***
 
 ----
 
-<a name="Tutorial"></a>
-### Tutorial
+<a name="Execution"></a>
+### Execution
 
-<!---!![Structure](/images/test_files.png)--->
 Open the terminal or the command prompt and go to the folder where the downloaded files are located.
 
 <ins>Help:</ins> If you want to know how to move between folders in the terminal or command prompt, check the following [link](https://biotecnologiamicrobianaunalmed.github.io/terminal-basics/).
 
-You can access the program's help by writing the following line:
+To execute the program it is necessary to run the main script and give it the path of at least one fastq/fasta file. The main script is called ***plantVirusDetectionV2.py*** and it's located in the folder ***Scripts***. The general sctructure is: 
 
 ```markdown
-python Scripts/plantVirusDetectionV2.py --help
-```
-You must obtain the following information:
-
-![Structure](/images/help.png)
-
-If you get an **error** like:
-
-```markdown
-"python" is not recognized as an internal or external command, operable program or batch file.
+python Scripts/plantVirusDetectionV2.py -seq1 <file_route> [options]
 ```
 
-Use the same command, but instead of **python** try **py**. A third option is to try **python3**. If none of the previous solutions work, check the Issues section.
-
-**Execution**
-
-To execute the program it is necessary to run the main script and give it the path of at least one fastq file. The main script is called ***plantVirusDetectionV2.py*** and it's located in the folder ***Scripts***. 
-
-The following command is used to run the test data that comes with the program.
+e.g. the following command is used to run the test data with the default options:
 
 ```markdown
 python Scripts/plantVirusDetectionV2.py -seq1 Files/data.fastq
 ```
 
-Then press enter and please be patient. The program displays messages in the terminal to inform about the step it is in; it is running correctly if you see something like:
+Then press enter and please be patient. The program displays messages in the terminal to inform about the step it is in. If everything works correctly you can see at the end the detected viruses in a summarized way. Also you can find the results in the *Files* folder.
 
-![Structure](/images/start.PNG)
-
-It is possible that an insufficient RAM memory error occurs, the program stops and at the end of step 1 "MemoryError" is observed, in this case it is necessary to use the -subset argument (see case 4). The recommended is three to five million sequences for common computer equipment. To see the most common errors, check the **Issues** section at the end.
-
-
-If everything works correctly you can see at the end the detected viruses in a summarized way like:
-
-![Structure](/images/end.PNG)
-
-You can find the results in the *Files* folder, and there will be the *Results_data* folder that should look like this:
-
-![Structure](/images/result_folder.PNG)
-
-With the previous results you can continue with the graphing section.
+The results folder includes eight tables in tsv (tab-separated values) format that summarize the running parameters, composition of the dataset, a curated table of results, and a summary of countries, host and references related to the viruses detected in the sample. These tables can be opened with standard spreadsheet programs or formatted as a user-friendly html report with Rstudio. 
 
 <ins>Tip:</ins> When analyzing your own files it is recommended to put the files in the **Files** folder or directly in the pvdp folder, otherwise it is necessary to specify the full path of where they are located.
 
-**Additional information**
+<a name="PVDP examples"></a>
+### PVDP examples
 
 The current version of PVDP works with mate-pairs and unpaired reads from Illumina sequencing technology (FASTQ.GZ, FASTQ or FASTA formats are supported). The program can receive multiple arguments, the most essential cases are described below:
 
-*<ins>Case 1</ins>: Unpaired reads.*
+* Unpaired reads:
 
->python Scripts/plantVirusDetectionV2.py -seq1 Path/to/file
+    ```markdown
+    python Scripts/plantVirusDetectionV2.py -seq1 Path/to/file
+    ```
 
-*<ins>Case 2</ins>: Mate-pairs reads.*
+* Mate-pairs reads:
 
->python Scripts/plantVirusDetectionV2.py -seq1 Path/to/file -seq2 Path/to/file/mate
+    ```markdown
+    python Scripts/plantVirusDetectionV2.py -seq1 <file_route> -seq2 <file2_route>
+    ```
 
-*<ins>Case 3</ins>: Mate-pairs **or** unpaired reads, using a host database as a filter. Currently only one database belonging to potato is available. This allows the process to be more efficient.*
+* Mate-pairs **or** unpaired reads, using a host database as a filter (currently only one database belonging to potato is available):
 
->python Scripts/plantVirusDetectionV2.py -seq1 Path/to/file -hostdb Potato_masked
+    ```markdown
+    python Scripts/plantVirusDetectionV2.py -seq1 <file_route> -hostdb Potato_masked
+    ```
 
->It is not necessary to specify the path of Potato_masked, the program searches by default in the Databases folder. It is also possible to use a specific database by entering the appropriate files in the aforementioned folder.
+    ```markdown
+    It is not necessary to specify the path of Potato_masked, the program searches by default in the Databases folder.
+    ```
 
-*<ins>Case 4</ins>: Mate-pairs **or** unpaired reads, using a specific amount of reads, e.g. 1000000. It is recommended to use this parameter when the data is very large and also to carry out an initial exploration of it.*
+* Mate-pairs **or** unpaired reads, using a specific amount of reads, e.g. 1000000. It is recommended to use this parameter when the data is very large and also to carry out an initial exploration of it (also to fix MemoryError in Step 1):
 
->python Scripts/plantVirusDetectionV2.py -seq1 Path/to/file -subset 1000000
+    ```markdown
+    python Scripts/plantVirusDetectionV2.py -seq1 <file_route> -subset 1000000
+    ```
 
-*<ins>Case 5</ins>: Mate-pairs **or** unpaired reads, using a specific amount of processors, e.g. 5. The default quantity is 2.*
+* Mate-pairs **or** unpaired reads, using a specific amount of processors, e.g. 5 (the default quantity is 2):
 
->python Scripts/plantVirusDetectionV2.py -seq1 Path/to/file -num_threads 5
+    ```markdown
+    python Scripts/plantVirusDetectionV2.py -seq1 <file_route> -num_threads 5
+    ```
 
-More information about the arguments is available by executing the following command:
+* More information about the arguments is available by executing the following command:
 
->python Scripts/plantVirusDetectionV2.py --help
+    ```markdown
+    python Scripts/plantVirusDetectionV2.py --help
+    ```
 
-*Each argument is unique, there is no need to repeat it when analyzing mated paires reads.*
+*Each argument is unique, but they can be combined at will.*
 
-**Graphing**
+<a name="HTML report"></a>
+### Generating user-friendly HTML report with RStudio
 
 When the process ends it is possible to create the graphic report in html format. To do this you need to open the file **VirusReport.Rmd** in Rstudio and have the required packages installed. **VirusReport.Rmd** is located in the **Scripts** folder.
 
@@ -285,31 +227,42 @@ You can close the window, the report is saved in the **Scripts** folder, under t
 
 ----
 
-**Issues**
+<a name="Issues"></a>
+### Issues
 
-- **Windows systems**:
+* [python] **AND** [py] **AND** [python3] ... is not recognized as an internal or external command, operable program or batch file.**:
 
-> python **AND** py **AND** python3 ... is not recognized as an internal or external command, operable program or batch file.
+    ```markdown
+    You may have Python installed through Anaconda(Windows systems), in this case you must open the Anaconda prompt. In other case the version you use of Python is less than 3.
+    ```
 
-You may have python installed through Anaconda, in this case you must open the Anaconda prompt.
+* MemoryError in Step 1:
 
-- **MemoryError in Step 1**
+    ```markdown
+    You must use the -subset argument, because the available RAM memory cannot process the total size of the data. The recommended is three to five million sequences for common computer equipment.
+    ```
 
-> You must use the -subset argument, because the available ram memory cannot process the total size of the data.
+* The program does not advance (hours) from step 1:
 
-- **The program does not advance from step 1**
+    ```markdown
+    The data format is not supported.
+    ```
 
-> Please check that the format of the [supported files](#supported) is correct. The fastq format may not be in the specified format.
+* Username or folders:
 
-- **Username or folders**
+    ```markdown
+    Please do not use spaces in the names assigned to folders or even the username, the program will not work.
+    ```
 
-> Please do not use spaces in the names assigned to folders or even the username, the program will not work.
+* ImportError: No moduled named statistics OR ValueError: math domain error
 
-- **ImportError: No moduled named statistics OR ValueError: math domain error**
-
-> Your version of python is lower than the third. Please update it.
+    ```markdown
+    Your version of python is lower than the third. Please update it.
+    ```
 
 <a name="Support"></a>
 ### Support or Contact
 
-Having troubles? Please contact us.
+Having troubles? Please contact us. Address for communication is in license file.
+
+
