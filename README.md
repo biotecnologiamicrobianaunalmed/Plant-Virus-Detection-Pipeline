@@ -34,7 +34,7 @@ Actually the scripts can process single- or paired-end data in fasta or fastq fo
 
 Execution of the scripts requires a local installation of python3 (van Rossum and Drake 2009), Blast (Altschul et al. 1990) and Rstudio (R Core Team 2017; RStudio Team 2020). 
 
-**1. BLAST+**
+**BLAST+**
 
 Please go to official [BLAST+](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download) page and install the correct version for you operative system. To verify that the tool works correctly, enter to the terminal or the command prompt and type: 
 
@@ -48,7 +48,7 @@ The installation was **successful** if you get the following message:
 BLAST query/options error : Either a BLAST database or subject sequence(s) must be specified. Please refer to the BLAST+ user manual.
 ```
 
-**2. Python**
+**Python**
 
 Please go to official [Python](https://www.python.org/downloads/) page and install the correct version (3.7+) for you operative system. To verify that the tool works correctly, enter to the terminal or the command prompt and type: 
 
@@ -72,11 +72,11 @@ If you get an **error** like:
 
 Use the same command, but instead of **python** try **py**. A third option is to try **python3**. It is important to remember the option that worked for the later steps. If none of the previous solutions work, check the Issues section.
 
-**3. R project**
+**R project**
 
 To download [R project](https://cran.r-project.org/mirrors.html) please choose your preferred CRAN mirror in the official page and then select the correct version for you operative system.
 
-**4. RStudio**
+**RStudio**
 
 It is necessary to have R project installed before this step. Please go to official [RStudio](https://rstudio.com/products/rstudio/download/) page and install the correct version for you operative system. To verify that the tool works correctly, run the program. 
 
@@ -200,7 +200,7 @@ The current version of PVDP works with mate-pairs and unpaired reads from Illumi
 
 When the process ends it is possible to create the graphic report in html format. To do this you need to open the file **VirusReport.Rmd** in Rstudio and have the required packages installed. **VirusReport.Rmd** is located in the **Scripts** folder.
 
-First modify the ***path_to_files*** variable directly in the script (line 14), specifying the full path to the Tables folder (1) found in the results folder that can be found in **Files/Results_data**. Make sure that the path ends with a slash, otherwise you may get an error, i.e. **../Tables/**.
+First modify the ***path_to_files*** variable directly in the script (line 14), specifying the full path to the Tables folder (1) found in the results folder that can be found in **Files/Results_data** (in the case of test data). Make sure that the path ends with a slash, otherwise you may get an error, i.e. **../Tables/**.
 
 ![Structure](/assets/rstudio1.png)
 
