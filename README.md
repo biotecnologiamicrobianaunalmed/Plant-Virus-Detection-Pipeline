@@ -10,12 +10,14 @@
 8. [Support or contact](#Support)
 
 <a name="Introduction"></a>
-### Introduction
+## Introduction
 
 High-throughput sequencing methods are becoming an essential tool in disease management programs. Unfortunately, the implementation of these techniques in developing countries can be hindered by a limited availability of well-trained bioinformaticians and/or high-performance computing centers that can process and analyze the data with reliability and speed. In this work we present a stand-alone plant virus detection pipeline (PVDP) optimized for the surveillance of potato viruses but also useful in other plant hosts. This open source pipeline runs under python and includes a curated database of plant viruses in addition to an R script for presenting results as a user-friendly html report. 
 
+----
+
 <a name="Pipeline"></a>
-### Pipeline
+## Pipeline
 
 The plant virus detection pipeline consists of four python scripts (nonRedundantSequences.py, genomeBLAST.py, virusBLAST.py and outputTables.py) that can be executed in a single step using the PlantVirusDetection.py; plain results can also be converted into a graphical html report using the virusReport.R script in Rstudio.
 
@@ -28,7 +30,7 @@ Actually the scripts can process single- or paired-end data in fasta or fastq fo
 ----
 
 <a name="Prerequisites"></a>
-### Prerequisites
+## Prerequisites
 
 Execution of the scripts requires a local installation of python3 (van Rossum and Drake 2009), Blast (Altschul et al. 1990) and Rstudio (R Core Team 2017; RStudio Team 2020). 
 
@@ -90,7 +92,7 @@ The following packages need to be installed:
 ----
 
 <a name="Download"></a>
-### Download
+## Download
 
 You can obtain the detection package in its compressed version at the following [link](https://drive.google.com/drive/folders/1gk9KyMXeIE7wy1GjyiTgrEwD9sDhsASA?usp=sharing). It contains the run and graph scripts, the databases and a test file.
 
@@ -118,7 +120,7 @@ Once the download is complete, locate the file in your preferred folder and unzi
 ----
 
 <a name="Execution"></a>
-### Execution
+## Execution
 
 Open the terminal or the command prompt and go to the folder where the downloaded files are located.
 
@@ -145,7 +147,7 @@ The results folder includes eight tables in tsv (tab-separated values) format th
 ----
 
 <a name="Examples"></a>
-### PVDP examples
+## PVDP examples
 
 The current version of PVDP works with mate-pairs and unpaired reads from Illumina sequencing technology (FASTQ.GZ, FASTQ or FASTA formats are supported). The program can receive multiple arguments, the most essential cases are described below:
 
@@ -194,7 +196,7 @@ The current version of PVDP works with mate-pairs and unpaired reads from Illumi
 ----
 
 <a name="HTML report"></a>
-### Generating user-friendly HTML report with RStudio
+## Generating user-friendly HTML report with RStudio
 
 When the process ends it is possible to create the graphic report in html format. To do this you need to open the file **VirusReport.Rmd** in Rstudio and have the required packages installed. **VirusReport.Rmd** is located in the **Scripts** folder.
 
@@ -225,7 +227,7 @@ You can close the window, the report is saved in the **Scripts** folder, under t
 ----
 
 <a name="Issues"></a>
-### Issues
+## Issues
 
 * [python] **AND** [py] **AND** [python3] ... is not recognized as an internal or external command, operable program or batch file.**:
 
@@ -260,7 +262,7 @@ You can close the window, the report is saved in the **Scripts** folder, under t
 ----
 
 <a name="Support"></a>
-### Support or Contact
+## Support or Contact
 
 Having troubles? Please contact us. Address for communication is in license file.
 
