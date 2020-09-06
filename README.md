@@ -38,7 +38,8 @@ Actually the scripts can process single- or paired-end data in fasta or fastq fo
 <a name="Prerequisites"></a>
 ## Prerequisites
 
-Execution of the scripts requires a local installation of python3 (van Rossum and Drake 2009), Blast (Altschul et al. 1990) and Rstudio (R Core Team 2017; RStudio Team 2020). 
+Execution of the scripts requires a local installation of Python 3 (van Rossum and Drake 2009), Blast (Altschul et al. 1990) and Rstudio (R Core Team 2017; RStudio Team 2020). 
+
 
 **BLAST+**
 
@@ -53,6 +54,7 @@ The installation was **successful** if you get the following message:
 ```markdown
 BLAST query/options error : Either a BLAST database or subject sequence(s) must be specified. Please refer to the BLAST+ user manual.
 ```
+
 
 **Python**
 
@@ -78,11 +80,12 @@ If you get an **error** like:
 
 Use the same command, but instead of **python** try **py**. A third option is to try **python3**. It is important to remember the option that worked for the later steps. If none of the previous solutions work, check the Issues section.
 
+
 **RStudio**
 
-It is necessary to have R project installed before this step. Please go to official [RStudio](https://rstudio.com/products/rstudio/download/) page and install the correct version for you operative system. To verify that the tool works correctly, run the program. 
+Please go to official [RStudio](https://rstudio.com/products/rstudio/download/) page and install the correct version for you operative system (RStudio requires an existing installation of R).
 
-The following packages need to be installed:
+Also the following packages need to be installed:
 
 ```markdown
 - ggplot2
@@ -91,6 +94,8 @@ The following packages need to be installed:
 - rmarkdown
 ```
 
+To verify that the tool works correctly, you can generate a HTML report from the test data available.
+
 
 ----
 
@@ -98,7 +103,7 @@ The following packages need to be installed:
 <a name="Download"></a>
 ## Download
 
-You can obtain the detection package in its compressed version at the following [link](https://drive.google.com/drive/folders/1gk9KyMXeIE7wy1GjyiTgrEwD9sDhsASA?usp=sharing). 
+You can obtain the detection package in its compressed version at the following <ins>[link](https://drive.google.com/drive/folders/1gk9KyMXeIE7wy1GjyiTgrEwD9sDhsASA?usp=sharing)</ins>. 
 
 Once the download is complete, locate the file in your preferred folder and unzip it; when you do this you will find the following structure:
 
