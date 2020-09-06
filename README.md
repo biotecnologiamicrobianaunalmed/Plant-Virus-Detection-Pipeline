@@ -9,12 +9,16 @@
 7. [Issues](#Issues)
 8. [Support or contact](#Support)
 
+----
+
 <a name="Introduction"></a>
 ## Introduction
 
 High-throughput sequencing methods are becoming an essential tool in disease management programs. Unfortunately, the implementation of these techniques in developing countries can be hindered by a limited availability of well-trained bioinformaticians and/or high-performance computing centers that can process and analyze the data with reliability and speed. In this work we present a stand-alone plant virus detection pipeline (PVDP) optimized for the surveillance of potato viruses but also useful in other plant hosts. This open source pipeline runs under python and includes a curated database of plant viruses in addition to an R script for presenting results as a user-friendly html report. 
 
+
 ----
+
 
 <a name="Pipeline"></a>
 ## Pipeline
@@ -27,7 +31,9 @@ Actually the scripts can process single- or paired-end data in fasta or fastq fo
 
 ![Pipeline](/assets/pvdp.jpg)
 
+
 ----
+
 
 <a name="Prerequisites"></a>
 ## Prerequisites
@@ -59,7 +65,7 @@ python  --version
 The installation was successful if you get a message like:
 
 ```markdown
-Python 3.7 (or superior)
+Python 3 (or superior)
 ```
 
 <ins>Important</ins>: *If you have a version lower than Python 3, the tool may not work correctly.*
@@ -71,10 +77,6 @@ If you get an **error** like:
 ```
 
 Use the same command, but instead of **python** try **py**. A third option is to try **python3**. It is important to remember the option that worked for the later steps. If none of the previous solutions work, check the Issues section.
-
-**R project**
-
-To download [R project](https://cran.r-project.org/mirrors.html) please choose your preferred CRAN mirror in the official page and then select the correct version for you operative system.
 
 **RStudio**
 
@@ -89,12 +91,14 @@ The following packages need to be installed:
 - rmarkdown
 ```
 
+
 ----
+
 
 <a name="Download"></a>
 ## Download
 
-You can obtain the detection package in its compressed version at the following [link](https://drive.google.com/drive/folders/1gk9KyMXeIE7wy1GjyiTgrEwD9sDhsASA?usp=sharing). It contains the run and graph scripts, the databases and a test file.
+You can obtain the detection package in its compressed version at the following [link](https://drive.google.com/drive/folders/1gk9KyMXeIE7wy1GjyiTgrEwD9sDhsASA?usp=sharing). 
 
 Once the download is complete, locate the file in your preferred folder and unzip it; when you do this you will find the following structure:
 
@@ -117,7 +121,9 @@ Once the download is complete, locate the file in your preferred folder and unzi
 
 ***The last update of the viral database was made on April, 2020.***
 
+
 ----
+
 
 <a name="Execution"></a>
 ## Execution
@@ -144,26 +150,28 @@ The results folder includes eight tables in tsv (tab-separated values) format th
 
 <ins>Tip:</ins> When analyzing your own files it is recommended to put the files in the **Files** folder or directly in the pvdp folder, otherwise it is necessary to specify the full path of where they are located.
 
+
 ----
+
 
 <a name="Examples"></a>
 ## PVDP examples
 
-The current version of PVDP works with mate-pairs and unpaired reads from Illumina sequencing technology (FASTQ.GZ, FASTQ or FASTA formats are supported). The program can receive multiple arguments, the most essential cases are described below:
+The program can receive multiple arguments, the most essential cases are described below:
 
-* Unpaired reads:
+* Single- reads:
 
     ```markdown
     python Scripts/plantVirusDetectionV2.py -seq1 Path/to/file
     ```
 
-* Mate-pairs reads:
+* Paired-end reads:
 
     ```markdown
     python Scripts/plantVirusDetectionV2.py -seq1 <file_route> -seq2 <file2_route>
     ```
 
-* Mate-pairs **or** unpaired reads, using a host database as a filter (currently only one database belonging to potato is available):
+* Single- **or** paired-end reads, using a host database as a filter (currently only one database belonging to potato is available):
 
     ```markdown
     python Scripts/plantVirusDetectionV2.py -seq1 <file_route> -hostdb Potato_masked
@@ -173,13 +181,13 @@ The current version of PVDP works with mate-pairs and unpaired reads from Illumi
     It is not necessary to specify the path of Potato_masked, the program searches by default in the Databases folder.
     ```
 
-* Mate-pairs **or** unpaired reads, using a specific amount of reads, e.g. 1000000. It is recommended to use this parameter when the data is very large and also to carry out an initial exploration of it (also to fix MemoryError in Step 1):
+* Single- **or** paired-end reads, using a specific amount of reads, e.g. 1000000. It is recommended to use this parameter when the data is very large and also to carry out an initial exploration of it (also to fix MemoryError in Step 1):
 
     ```markdown
     python Scripts/plantVirusDetectionV2.py -seq1 <file_route> -subset 1000000
     ```
 
-* Mate-pairs **or** unpaired reads, using a specific amount of processors, e.g. 5 (the default quantity is 2):
+* Single- **or** paired-end, using a specific amount of processors, e.g. 5 (the default quantity is 2):
 
     ```markdown
     python Scripts/plantVirusDetectionV2.py -seq1 <file_route> -num_threads 5
@@ -193,7 +201,9 @@ The current version of PVDP works with mate-pairs and unpaired reads from Illumi
 
 *Each argument is unique, but they can be combined at will.*
 
+
 ----
+
 
 <a name="HTML report"></a>
 ## Generating user-friendly HTML report with RStudio
@@ -224,7 +234,9 @@ The process ends once the bar loads completely. Then it is possible to **Knit** 
 
 You can close the window, the report is saved in the **Scripts** folder, under the name of *VirusReport.html*. It is recommended to change the file name or change folder, because if the script is executed with another data set it will be overwritten.
 
+
 ----
+
 
 <a name="Issues"></a>
 ## Issues
@@ -232,7 +244,7 @@ You can close the window, the report is saved in the **Scripts** folder, under t
 * [python] **AND** [py] **AND** [python3] ... is not recognized as an internal or external command, operable program or batch file.**:
 
     ```markdown
-    You may have Python installed through Anaconda(Windows systems), in this case you must open the Anaconda prompt. In other case the version you use of Python is less than 3.
+    You may have Python installed through Anaconda(Windows systems), in this case you must open the Anaconda prompt. In other case Your version of Python is lower than the third. Please update it.
     ```
 
 * MemoryError in Step 1:
@@ -256,10 +268,12 @@ You can close the window, the report is saved in the **Scripts** folder, under t
 * ImportError: No moduled named statistics OR ValueError: math domain error
 
     ```markdown
-    Your version of python is lower than the third. Please update it.
+    Your version of Python is lower than the third. Please update it.
     ```
 
+
 ----
+
 
 <a name="Support"></a>
 ## Support or Contact
