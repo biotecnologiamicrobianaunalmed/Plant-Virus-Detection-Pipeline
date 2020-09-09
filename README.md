@@ -167,7 +167,7 @@ The program can receive multiple arguments, the most essential cases are describ
 * Single- reads:
 
     ```markdown
-    python Scripts/plantVirusDetectionV2.py -seq1 Path/to/file
+    python Scripts/plantVirusDetectionV2.py -seq1 <file_route>
     ```
 
 * Paired-end reads:
