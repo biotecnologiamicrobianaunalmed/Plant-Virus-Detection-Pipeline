@@ -19,7 +19,12 @@
 <li>PVDP is an open source tool for the detection of plant viruses in RNAseq data designed to be used locally in desktop computers with moderate computational power. PVDP does not require data submission to third parties and can be run under LINUX, Windows or MacOS. </li>
 
 <li>The pipeline requires a local installation of BLAST and Python3. Rstudio is optional but is required to process results into a user friendly hmtl report. </li>
+
 ----
+<a name="Data"></a>
+## Supported data
+
+PVDP supports single- or paired-end data in fasta or fastq formats. Datasets can also be compressed in gz format.
 
 
 ----
