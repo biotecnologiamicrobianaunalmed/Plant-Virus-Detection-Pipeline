@@ -1,5 +1,7 @@
 # PVDP 1.0.1 Manual
 
+
+
 1. [Introduction](#Introduction)
 2. [Pipeline](#Pipeline)
 3. [Prerequisites](#Prerequisites)
@@ -14,7 +16,7 @@
 <a name="Introduction"></a>
 ## Introduction
 
-High-throughput sequencing methods are becoming an essential tool in disease management programs. Unfortunately, the implementation of these techniques in developing countries can be hindered by a limited availability of well-trained bioinformaticians and/or high-performance computing centers that can process and analyze the data with reliability and speed. In this work we present a stand-alone plant virus detection pipeline (PVDP) optimized for the surveillance of potato viruses but also useful in other plant hosts. This open source pipeline runs under python and includes a curated database of plant viruses in addition to an R script for presenting results as a user-friendly html report. 
+<li>High-throughput sequencing methods are becoming an essential tool in disease management programs. Unfortunately, the implementation of these techniques in developing countries can be hindered by a limited availability of well-trained bioinformaticians and/or high-performance computing centers that can process and analyze the data with reliability and speed. In this work we present a stand-alone plant virus detection pipeline (PVDP) optimized for the surveillance of potato viruses but also useful in other plant hosts. This open source pipeline runs under python and includes a curated database of plant viruses in addition to an R script for presenting results as a user-friendly html report. </li>
 
 
 ----
