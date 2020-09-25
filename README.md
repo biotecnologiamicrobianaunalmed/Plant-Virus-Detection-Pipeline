@@ -21,11 +21,7 @@
 <li>The pipeline requires a local installation of BLAST and Python3. Rstudio is optional but is required to process results into a user friendly hmtl report. </li>
 ----
 
-----
-<a name="Data"></a>
-## Supported data
 
-PVDP supports single- or paired-end data in fasta or fastq formats. Datasets can also be compressed in gz format.
 ----
 
 <a name="Pipeline"></a>
