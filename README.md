@@ -24,7 +24,7 @@
 <a name="Data"></a>
 ## Supported data
 
-PVDP supports single- or paired-end data in fasta or fastq formats. Datasets can also be compressed in gz format.
+PVDP supports single- or paired-end data in fasta or fastq formats. Datasets can be compressed in gzip (.gz) format.
 
 
 ----
