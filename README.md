@@ -4,7 +4,7 @@
 * [Supported data](#Data)
 * [Pipeline](#Pipeline)
 * [Prerequisites](#Prerequisites)
-* [Download](#Download)  
+* [Installation](#Installation)  
 * [Execution](#Execution)
 * [Optional arguments](#Examples)
 * [Issues](#Issues)
@@ -16,6 +16,8 @@
 <li>PVDP is an open source tool for the detection of plant viruses in RNAseq data designed to be used locally in desktop computers with moderate computational power. PVDP does not require data submission to third parties and can be run under LINUX, Windows or MacOS. </li>
 
 <li>The pipeline requires a local installation of BLAST and Python3. Rstudio is optional but is required to process results into a user friendly hmtl report. </li>
+
+<li>PVDP scripts and test files can be downloaded in this <ins>[link](https://drive.google.com/drive/folders/1gk9KyMXeIE7wy1GjyiTgrEwD9sDhsASA?usp=sharing)</ins>.<li> 
 
 <a name="Data"></a>
 ## Supported data
@@ -93,14 +95,8 @@ Please go to official [RStudio](https://rstudio.com/products/rstudio/download/) 
 ```
 Detailed instructions on how to Install R, RStudio and R Packages can be found [here](https://data-flair.training/blogs/how-to-install-r/)
 
-
-----
-
-
-<a name="Download"></a>
-## Download
-
-You can obtain the detection package in its compressed version at the following <ins>[link](https://drive.google.com/drive/folders/1gk9KyMXeIE7wy1GjyiTgrEwD9sDhsASA?usp=sharing)</ins>. 
+<a name="Installation"></a>
+## Installation
 
 Once the download is complete, locate the file in your preferred folder and unzip it; when you do this you will find the following structure:
 
