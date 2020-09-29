@@ -20,7 +20,7 @@
 <a name="Data"></a>
 ## Supported data
 
-PVDP supports single- or paired-end data in fasta or fastq formats. Datasets can be compressed in gzip (.gz) format.
+PVDP supports single- or paired-end data in either fasta or fastq format. Datasets can be compressed in gzip (.gz) format.
 
 
 ----
@@ -28,9 +28,9 @@ PVDP supports single- or paired-end data in fasta or fastq formats. Datasets can
 <a name="Pipeline"></a>
 ## Pipeline
 
-The plant virus detection pipeline consists of four python scripts (nonRedundantSequences.py, genomeBLAST.py, virusBLAST.py and outputTables.py) that can be executed in a single step using the PlantVirusDetection.py; plain results can also be converted into a graphical html report using the virusReport.R script in Rstudio.
+The plant virus detection pipeline consists of four python scripts (nonRedundantSequences.py, genomeBLAST.py, virusBLAST.py and outputTables.py) that can be executed in a single step using the PlantVirusDetection.py. Plain results can also be converted into a graphical html report using the virusReport.R script in Rstudio.
 
-The package runs locally in standard desktop or laptop computers under Windows, Linux and macOS using the command-line interface. Also includes several options that allow the user to analyze subsets of data, and the use of filtering parameters and databases.
+The package runs locally in standard desktop or laptop computers under Windows, Linux and macOS using the command-line interface. PVDP includes several options that allow the user to analyze subsets of data, and the use of filtering parameters and databases.
 
 Actually the scripts can process single- or paired-end data in fasta or fastq formats, and can also process data compressed in gz format.
 
