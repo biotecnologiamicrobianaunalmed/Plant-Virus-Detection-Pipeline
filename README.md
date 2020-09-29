@@ -60,8 +60,7 @@ BLAST query/options error : Either a BLAST database or subject sequence(s) must 
 
 **Python**
 
-Please go to official [Python]
-(https://www.python.org/downloads/)
+Please go to the official [Python](https://www.python.org/downloads/)
 page and install the correct version (3.7+) for you operating system. To verify that python was installed properly, open the terminal and type: 
 
 ```sh
