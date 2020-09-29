@@ -278,5 +278,5 @@ You can close the window, the report is saved in the **Scripts** folder, under t
 Having troubles? Please contact us at: lab labmicrobiologia_med@unal.edu.co. Please write "PVDP help" in the subject. 
 
 <a name="Citation"></a>
-
-Please cite: Gutierrez et al. (2020) To be published.
+## Citation
+If you use PVDP in your research, please include the following reference: Gutierrez et al. (2020) To be published.
