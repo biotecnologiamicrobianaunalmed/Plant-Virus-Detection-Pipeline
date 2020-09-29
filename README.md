@@ -43,7 +43,7 @@ Crude results are processed using the ***outputTables.py*** script, which remove
 ## Prerequisites
 **BLAST**
 
-Please go to  the official [BLAST+](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download) page and install the correct version for you operating system. To verify BLAST was installed correctly, type: 
+Please go to  the official [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download) page and install the correct version for you operating system. To verify BLAST that installed correctly, open the terminal and type: 
 
 ```sh
 blastn
