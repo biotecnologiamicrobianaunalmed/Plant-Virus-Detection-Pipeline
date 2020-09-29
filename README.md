@@ -17,7 +17,8 @@
 
 <li>The pipeline requires a local installation of BLAST and Python3. Rstudio is optional but is required to process results into a user friendly hmtl report.</li>
 
-<li>PVDP scripts and test files can be downloaded [here](https://drive.google.com/drive/folders/1gk9KyMXeIE7wy1GjyiTgrEwD9sDhsASA?usp=sharing).</li> 
+<li>PVDP scripts and test files can be downloaded [here]
+       (https://drive.google.com/drive/folders/1gk9KyMXeIE7wy1GjyiTgrEwD9sDhsASA?usp=sharing).</li> 
        
 <a name="Data"></a>
 ## Supported data
@@ -60,7 +61,9 @@ BLAST query/options error : Either a BLAST database or subject sequence(s) must 
 
 **Python**
 
-Please go to official [Python](https://www.python.org/downloads/) page and install the correct version (3.7+) for you operating system. To verify that python was installed properly, open the terminal and type: 
+Please go to official [Python]
+(https://www.python.org/downloads/)
+page and install the correct version (3.7+) for you operating system. To verify that python was installed properly, open the terminal and type: 
 
 ```sh
 python  --version
