@@ -1,7 +1,5 @@
 # PVDP 1.0.1 Manual
 
-
-
 1. [General info](#Info)
 2. [Supported data](#Data)
 3. [Pipeline](#Pipeline)
@@ -12,7 +10,6 @@
 8. [Issues](#Issues)
 9. [Support or contact](#Support)
 
-----
 <a name="Info"></a>
 ## General info
 
@@ -20,7 +17,6 @@
 
 <li>The pipeline requires a local installation of BLAST and Python3. Rstudio is optional but is required to process results into a user friendly hmtl report. </li>
 
-----
 <a name="Data"></a>
 ## Supported data
 
