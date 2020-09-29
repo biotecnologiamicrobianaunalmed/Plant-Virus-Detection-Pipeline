@@ -41,13 +41,9 @@ Crude results are processed using the ***outputTables.py*** script, which remove
 
 <a name="Prerequisites"></a>
 ## Prerequisites
+**BLAST**
 
-Execution of the scripts requires a local installation of Python 3 (van Rossum and Drake 2009), Blast (Altschul et al. 1990) and Rstudio (R Core Team 2017; RStudio Team 2020). 
-
-
-**BLAST+**
-
-Please go to official [BLAST+](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download) page and install the correct version for you operative system. To verify that the tool works correctly, enter to the terminal or the command prompt and type: 
+Please go to  the official [BLAST+](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download) page and install the correct version for you operating system. To verify BLAST was installed correctly, type: 
 
 ```sh
 blastn
