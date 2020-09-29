@@ -37,8 +37,6 @@ Host sequences can be removed prior to the virus detection step using ***genomeB
 
 Crude results are processed using the ***outputTables.py*** script, which removes hits with low certainty. Plain results are saved in the *Tables* directory and ca be converted into a user friendly html report using ***virusReport.R*** script in Rstudio.
 
-#![Pipeline](/assets/Fig1_200dpi.png)
-
 <img src="/assets/Fig1_200dpi.png" alt="drawing" width=1000"/>
 
 <a name="Prerequisites"></a>
