@@ -5,8 +5,7 @@
 * [Pipeline](#Pipeline)
 * [Prerequisites](#Prerequisites)
 * [Installation](#Installation)  
-* [Execution](#Execution)
-* [Optional arguments](#Examples)
+* [Examples](#Examples)
 * [Issues](#Issues)
 * [Support or contact](#Support)
 
@@ -123,10 +122,8 @@ Once the download is complete, locate the file in your preferred folder and unzi
 ***The last update of the viral database was made on April, 2020.***
 
 
-----
+<a name="Examples"></a>
 
-
-<a name="Execution"></a>
 ## Execution
 
 Open the terminal or the command prompt and go to the folder where the downloaded files are located.
@@ -150,12 +147,6 @@ Then press enter and please be patient. The program displays messages in the ter
 The results folder includes eight tables in tsv (tab-separated values) format that summarize the running parameters, composition of the dataset, a curated table of results, and a summary of countries, host and references related to the viruses detected in the sample. These tables can be opened with standard spreadsheet programs or formatted as a user-friendly html report with Rstudio. 
 
 <ins>Tip:</ins> When analyzing your own files it is recommended to put the files in the **Files** folder or directly in the pvdp folder, otherwise it is necessary to specify the full path of where they are located.
-
-
-----
-
-
-<a name="Examples"></a>
 ## PVDP examples
 
 The program can receive multiple arguments, the most essential cases are described below:
