@@ -39,6 +39,8 @@ Crude results are processed using the ***outputTables.py*** script, which remove
 
 ![Pipeline](/assets/Fig1_200dpi.png)
 
+<img src="/assets/Fig1_200dpi.png" alt="drawing" width="1000"/>
+
 <a name="Prerequisites"></a>
 ## Prerequisites
 
