@@ -67,7 +67,7 @@ python  --version
 The installation was successful if you get a message like:
 
 ```markdown
-Python 3 (or superior)
+Python 3.x.x
 ```
 
 <ins>Important</ins>: *If you have a version lower than Python 3, the tool may not work correctly.*
