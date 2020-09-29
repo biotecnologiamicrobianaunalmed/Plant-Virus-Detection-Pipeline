@@ -29,8 +29,6 @@ PVDP supports single- or paired-end data in either fasta or fastq format. Datase
 The plant virus detection pipeline comprises four python scripts (*nonRedundantSequences.py*, *genomeBLAST.py*, *virusBLAST.py*, and *outputTables.py*)
 that can be executed in a single step using the *PlantVirusDetection.py* script. Plain result tables can be converted into a graphical *html* report using the virusReport.R script in Rstudio.
 
-![Pipeline](/assets/pvdp.jpg)
-
  ***nonRedundantSequences.py*** removes redundant sequences from the dataset and transforms it into a fasta file of non-redundant sequences ordered by abundance and labelled with a unique identifier that contains information on the rank and the number of counts in the original dataset.
 
 Host sequences can be removed prior to the virus detection step using ***genomeBLAST.py***  against a custom databases for any plant host. This database must be supplied by the user. A BLAST database for the removal potato (*S. tuberosum* and *S. phureja*) sequences is included in the test files. 
@@ -39,6 +37,7 @@ Host sequences can be removed prior to the virus detection step using ***genomeB
 
 Crude results are processed using the ***outputTables.py*** script, which removes hits with low certainty. Plain results are saved in the *Tables* directory and ca be converted into a user friendly html report using ***virusReport.R*** script in Rstudio.
 
+![Pipeline](/assets/pvdp.jpg)
 
 <a name="Prerequisites"></a>
 ## Prerequisites
