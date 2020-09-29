@@ -124,7 +124,9 @@ Once the download is complete, locate the file in your preferred folder and unzi
 
 <a name="Examples"></a>
 
-## Execution
+## Examples
+
+### Running the test files with default parameters
 
 Open the terminal or the command prompt and go to the folder where the downloaded files are located.
 
