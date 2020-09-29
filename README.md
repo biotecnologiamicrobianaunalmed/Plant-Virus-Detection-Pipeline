@@ -35,7 +35,7 @@ Host sequences can be removed prior to the virus detection step using ***genomeB
 
 ***virusBLAST.py*** performs a search of putative viral sequences using a dc-megablast search against a curated and non-redundant database of plant viruses with a standardized title comprising information relevant to each virus. The plant virus database is included as part of the pipeline.
 
-Crude results are processed using the ***outputTables.py*** script, which removes hits with low certainty. Plain results are saved in the *Tables* directory and ca be converted into a user friendly html report using ***virusReport.R*** script in Rstudio.
+Crude results are processed using the ***outputTables.py*** script, which removes hits with low certainty. Plain results are saved in the *Tables* directory and can be converted into a user friendly html report using ***virusReport.R*** script in Rstudio.
 
 <img src="/assets/Fig1_400dpi.png" alt="drawing" width="600"/>
 
