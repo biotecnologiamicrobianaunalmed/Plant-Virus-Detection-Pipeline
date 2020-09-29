@@ -7,8 +7,8 @@
 * [Installation](#Installation)  
 * [Examples](#Examples)
 * [Issues](#Issues)
-* [Support or contact](#Support)
-
+* [Support](#Support)
+* [Citation](#Citation)
 <a name="Info"></a>
 ## General info
 
@@ -272,12 +272,11 @@ You can close the window, the report is saved in the **Scripts** folder, under t
     ```
 
 
-----
-
-
 <a name="Support"></a>
-## Support or Contact
+## Support
 
-Having troubles? Please contact us. Address for communication is in license file.
+Having troubles? Please contact us at: lab labmicrobiologia_med@unal.edu.co. Please write "PVDP help" in the subject. 
 
+<a name="Citation"></a>
 
+Please cite: Gutierrez et al. (2020) To be published.
