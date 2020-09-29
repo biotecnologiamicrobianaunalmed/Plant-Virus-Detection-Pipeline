@@ -16,8 +16,8 @@
 
 <li>The pipeline requires a local installation of BLAST and Python3. Rstudio is optional but is required to process results into a user friendly hmtl report.</li>
 
-<li>PVDP scripts and test files can be downloaded at this link: 
-       (https://drive.google.com/drive/folders/1gk9KyMXeIE7wy1GjyiTgrEwD9sDhsASA?usp=sharing).</li> 
+<li>PVDP scripts and test files can be downloaded at this [link](https://drive.google.com/drive/folders/1gk9KyMXeIE7wy1GjyiTgrEwD9sDhsASA?usp=sharing) 
+</li> 
        
 <a name="Data"></a>
 ## Supported data
@@ -86,7 +86,7 @@ Try **py** or **python3** instead. It is important to remember the option that w
 
 **RStudio**
 
-Please go to official [RStudio](https://rstudio.com/products/rstudio/download/) page and install the correct version for you operating system (RStudio requires an installation of R). The following packages need to be installed:
+Please go to the official [RStudio](https://rstudio.com/products/rstudio/download/) page and install the correct version for you operating system (RStudio requires an installation of R). The following packages need to be installed:
 
 ```markdown
 - ggplot2
