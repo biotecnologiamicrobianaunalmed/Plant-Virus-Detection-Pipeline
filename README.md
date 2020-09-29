@@ -43,7 +43,7 @@ Crude results are processed using the ***outputTables.py*** script, which remove
 ## Prerequisites
 **BLAST**
 
-Please go to  the official [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download) page and install the correct version for you operating system. To verify BLAST that installed correctly, open the terminal and type: 
+Please go to  the official [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download) page and install the correct version for you operating system. To verify that BLAST that installed properly, open the terminal and type: 
 
 ```sh
 blastn
@@ -58,7 +58,7 @@ BLAST query/options error : Either a BLAST database or subject sequence(s) must 
 
 **Python**
 
-Please go to official [Python](https://www.python.org/downloads/) page and install the correct version (3.7+) for you operative system. To verify that the tool works correctly, enter to the terminal or the command prompt and type: 
+Please go to official [Python](https://www.python.org/downloads/) page and install the correct version (3.7+) for you operating system. To verify that python was installed properly, open the terminal and type: 
 
 ```sh
 python  --version
@@ -78,7 +78,7 @@ If you get an **error** like:
 "python" is not recognized as an internal or external command, operable program or batch file.
 ```
 
-Use the same command, but instead of **python** try **py**. A third option is to try **python3**. It is important to remember the option that worked for the later steps. If none of the previous solutions work, check the Issues section.
+Try **py** or **python3** instead. It is important to remember the option that worked for you as this will be used to launch PVDP. If none of the previous solutions work, check the issues section.
 
 
 **RStudio**
