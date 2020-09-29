@@ -83,9 +83,7 @@ Try **py** or **python3** instead. It is important to remember the option that w
 
 **RStudio**
 
-Please go to official [RStudio](https://rstudio.com/products/rstudio/download/) page and install the correct version for you operative system (RStudio requires an existing installation of R).
-
-Also the following packages need to be installed:
+Please go to official [RStudio](https://rstudio.com/products/rstudio/download/) page and install the correct version for you operating system (RStudio requires an installation of R). The following packages need to be installed:
 
 ```markdown
 - ggplot2
@@ -93,8 +91,7 @@ Also the following packages need to be installed:
 - knitr
 - rmarkdown
 ```
-
-To verify that the tool works correctly, you can generate a HTML report from the test data available.
+Detailed instructions on how to Install R, RStudio and R Packages can be found [here](https://data-flair.training/blogs/how-to-install-r/)
 
 
 ----
