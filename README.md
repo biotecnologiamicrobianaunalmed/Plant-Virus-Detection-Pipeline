@@ -132,7 +132,7 @@ Once the download is complete, locate the file in your preferred folder and unzi
 
 ### Executing PVDP on a data subset
 
-### Genearation of the *HTML* report 
+### Genearation of the HTML report 
 
 Open the terminal or the command prompt and go to the folder where the downloaded files are located.
 
