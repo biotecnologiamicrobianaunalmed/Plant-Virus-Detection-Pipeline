@@ -126,7 +126,13 @@ Once the download is complete, locate the file in your preferred folder and unzi
 
 ## Examples
 
-### Running the test files with default parameters
+### Executing PVDP with a subset of data using default parameters
+
+### Executing PVDP with removal of host sequences
+
+### Executing PVDP on a data subset
+
+
 
 Open the terminal or the command prompt and go to the folder where the downloaded files are located.
 
