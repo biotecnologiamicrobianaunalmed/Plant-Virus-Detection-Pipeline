@@ -6,7 +6,7 @@
 * [Prerequisites](#Prerequisites)
 * [Installation](#Installation)  
 * [Examples](#Examples)
-* [Issues](#Issues)
+* [Known issues](#Issues)
 * [Support](#Support)
 * [Citation](#Citation)
 <a name="Info"></a>
@@ -239,7 +239,7 @@ You can close the window, the report is saved in the **Scripts** folder, under t
 
 
 <a name="Issues"></a>
-## Issues
+## Known issues
 
 * [python] **AND** [py] **AND** [python3] ... is not recognized as an internal or external command, operable program or batch file.**:
 
