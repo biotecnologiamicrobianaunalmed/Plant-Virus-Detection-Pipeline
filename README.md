@@ -1,14 +1,14 @@
 # PVDP 1.0.1 Manual
 
-1. [General info](#Info)
-2. [Supported data](#Data)
-3. [Pipeline](#Pipeline)
-4. [Prerequisites](#Prerequisites)
-5. [Download](#Download)  
-6. [Execution](#Execution)
-7. [Optional arguments](#Examples)
-8. [Issues](#Issues)
-9. [Support or contact](#Support)
+* [General info](#Info)
+* [Supported data](#Data)
+* [Pipeline](#Pipeline)
+* [Prerequisites](#Prerequisites)
+* [Download](#Download)  
+* [Execution](#Execution)
+* [Optional arguments](#Examples)
+* [Issues](#Issues)
+* [Support or contact](#Support)
 
 <a name="Info"></a>
 ## General info
