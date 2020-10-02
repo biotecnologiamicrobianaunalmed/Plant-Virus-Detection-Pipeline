@@ -133,10 +133,12 @@ To analize a single dataset without using a host filter database type the follow
 ```markdown
 python3 PVDP/Scripts/PVDP.py -seq1 file_location
 ```
-For example, to run the dataset testData_SPhureja_1.fastq.gz, type the following:
+For example, to run the dataset testData_SPhureja_1.fastq.gz, type:
 ```markdown
 python3 PVDP/Scripts/PVDP.py -seq1 Datasets/testData_SPhureja_1.fastq.gz 
 ```
+
+
 ### Executing PVDP with removal of host sequences
 
 ### Executing PVDP on a data subset
