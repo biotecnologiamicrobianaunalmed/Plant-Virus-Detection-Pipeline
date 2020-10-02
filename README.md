@@ -352,7 +352,13 @@ python Scripts/PVDP.py -seq1 <file_route> [options]
 |  -seq1(required) | Path to sequence file 1   | String    |
 |  -seq2 | Path to sequence file 2   | String    |
 |  -hostdb| Path to BLAST database of host sequences   | String    |
-|  -num_threads| Number of processors to be used   | integer    |
+|  -num_threads| Number of processors to be used   | Integer    |
+|  -subset| Analyzes a subset of reads of the specified size   | Integer    |
+|  -remove_bad_reads| Removes reads with ambiguous base calls    | Boolean    |
+|  -top| Analyzes the most abundant non-redundant sequences    | Integer    |
+|  -threshold| Removes non-redundant reads with low abundance   | Integer    |
+
+
 
 
 
