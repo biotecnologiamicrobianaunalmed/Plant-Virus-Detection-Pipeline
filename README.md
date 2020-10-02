@@ -325,7 +325,17 @@ python3 PVDP/Scripts/PVDP.py -seq1 Datasets/testData_SPhureja_1.fastq.gz -seq2 D
 ```
 
 ### Executing PVDP on a data subset
+For exploratory analysis of data or execution on low-performance computers, a subset of sequences can be anlyzed using the -subset parameter. This parameter avoids a complete analysis of large dataset, is faster, and requires less memory.
 
+to analyze a subset of 10000 sequences in a paired-end  dataset, type:
+
+```markdown
+python3 PVDP/Scripts/PVDP.py -seq1 <file location> -seq2 <file location> -hostdb <database location> -subset 10000
+```
+To run the test files, type:
+```markdown
+python3 PVDP/Scripts/PVDP.py -seq1 Datasets/testData_SPhureja_1.fastq.gz -seq2 Datasets/testData_SPhureja_2.fastq.gz -hostdb PVDP/Databases/Potato_masked -subset 10000
+```
 ### Generation of the HTML report 
 
 Open the terminal or the command prompt and go to the folder where the downloaded files are located.
