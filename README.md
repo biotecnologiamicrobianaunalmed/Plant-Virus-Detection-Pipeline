@@ -300,7 +300,7 @@ putative_Solendovirus (Solendovirus/Caulimoviridae) :
 Total execution time: 498.854 seconds
 ```
 
-### Executing PVDP with default parameters using a single dataset
+### Executing PVDP with default parameters using paired-end data
 For paired-end data, just add the mate dataset set using the parameter -seq2 as shown in the example below:
 
 ```markdown
@@ -312,7 +312,17 @@ For example, to analyze the datasets testData_SPhureja_1.fastq.gz and testData_S
 python3 PVDP/Scripts/PVDP.py -seq1 Datasets/testData_SPhureja_1.fastq.gz -seq2 Datasets/testData_SPhureja_2.fastq.gz
 ```
 
-### Executing PVDP with removal of host sequences
+### Executing PVDP with previous removal of host sequences
+Execution times can significantly improve if a BLAST database of the target host is available. This also removes endogenous viral-like sequences from the analysis. For Potato, a custom database is included in Database folder (Potato_masked). To use a host filtering database just add the -hostdb parameter followed by the location of the database, like this:
+
+```markdown
+python3 PVDP/Scripts/PVDP.py -seq1 <file location> -seq2 <file location> 
+```
+To run the test files, type:
+
+```markdown
+python3 PVDP/Scripts/plantVirusDetectionV2.py -seq1 Datasets/testData_SPhureja_1.fastq.gz -seq2 Datasets/testData_SPhureja_2.fastq.gz -hostdb PVDP/Databases/Potato_masked
+```
 
 ### Executing PVDP on a data subset
 
