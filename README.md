@@ -321,7 +321,7 @@ python3 PVDP/Scripts/PVDP.py -seq1 <file location> -seq2 <file location> -hostdb
 To run the test files, type:
 
 ```markdown
-python3 PVDP/Scripts/plantVirusDetectionV2.py -seq1 Datasets/testData_SPhureja_1.fastq.gz -seq2 Datasets/testData_SPhureja_2.fastq.gz -hostdb PVDP/Databases/Potato_masked
+python3 PVDP/Scripts/PVDP.py -seq1 Datasets/testData_SPhureja_1.fastq.gz -seq2 Datasets/testData_SPhureja_2.fastq.gz -hostdb PVDP/Databases/Potato_masked
 ```
 
 ### Executing PVDP on a data subset
