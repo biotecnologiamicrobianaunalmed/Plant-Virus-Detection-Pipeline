@@ -6,6 +6,7 @@
 * [Prerequisites](#Prerequisites)
 * [Installation](#Installation)  
 * [Examples](#Examples)
+* [Available parameters](#Parameters)
 * [Known issues](#Issues)
 * [Support](#Support)
 * [Citation](#Citation)
@@ -336,6 +337,17 @@ To run the test files, type:
 ```markdown
 python3 PVDP/Scripts/PVDP.py -seq1 Datasets/testData_SPhureja_1.fastq.gz -seq2 Datasets/testData_SPhureja_2.fastq.gz -hostdb PVDP/Databases/Potato_masked -subset 10000
 ```
+
+<a name="Parameters"></a>
+
+## Available parameters
+
+The following table illustrates the parameters currently available for the execution of PVDP. They can be implemente using the following syntax.
+
+```markdown
+python Scripts/PVDP.py -seq1 <file_route> [options]
+```
+
 ### Generation of the HTML report 
 
 Open the terminal or the command prompt and go to the folder where the downloaded files are located.
