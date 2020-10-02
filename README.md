@@ -17,6 +17,8 @@
 <li>The pipeline requires a local installation of BLAST and Python3. Rstudio is optional but is required to process results into a user friendly hmtl report.</li>
 
 <li>PVDP scripts and test files can be downloaded at this link: (https://drive.google.com/drive/folders/1gk9KyMXeIE7wy1GjyiTgrEwD9sDhsASA?usp=sharing) 
+     https://drive.google.com/drive/folders/1_sSTEjxtYMMA_Sc5TJo3LOMfuBjHZA2t?usp=sharing  
+       
 </li> 
        
 <a name="Data"></a>
