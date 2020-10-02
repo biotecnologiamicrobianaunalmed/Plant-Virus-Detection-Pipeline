@@ -347,6 +347,11 @@ The following table illustrates the parameters currently available for the execu
 ```markdown
 python Scripts/PVDP.py -seq1 <file_route> [options]
 ```
+| Column 1       | Column 2     | Column 3     |
+| :------------- | :----------: | -----------: |
+|  Cell Contents | More Stuff   | And Again    |
+| You Can Also   | Put Pipes In | Like this \| |
+
 
 ### Generation of the HTML report 
 
