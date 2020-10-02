@@ -137,7 +137,8 @@ For example, to run the dataset testData_SPhureja_1.fastq.gz, type:
 ```markdown
 python3 PVDP/Scripts/PVDP.py -seq1 Datasets/testData_SPhureja_1.fastq.gz 
 ```
-When run correctly you should get the following output in the screen:
+When run correctly, you will find a file within the Datasets folder contaning a summary of results in a newly created folder with the name Results_testData_SPhureja_1
+During execution you should an output similar to this:
 
 ```markdown
 
