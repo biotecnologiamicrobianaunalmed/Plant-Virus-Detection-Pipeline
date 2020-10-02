@@ -312,11 +312,11 @@ For example, to analyze the datasets testData_SPhureja_1.fastq.gz and testData_S
 python3 PVDP/Scripts/PVDP.py -seq1 Datasets/testData_SPhureja_1.fastq.gz -seq2 Datasets/testData_SPhureja_2.fastq.gz
 ```
 
-### Executing PVDP with previous removal of host sequences
+### Executing PVDP with a host sequence filter
 Execution times can significantly improve if a BLAST database of the target host is available. This also removes endogenous viral-like sequences from the analysis. For Potato, a custom database is included in Database folder (Potato_masked). To use a host filtering database just add the -hostdb parameter followed by the location of the database, like this:
 
 ```markdown
-python3 PVDP/Scripts/PVDP.py -seq1 <file location> -seq2 <file location> 
+python3 PVDP/Scripts/PVDP.py -seq1 <file location> -seq2 <file location> -hostdb <database location> 
 ```
 To run the test files, type:
 
