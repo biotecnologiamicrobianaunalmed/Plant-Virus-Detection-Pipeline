@@ -309,16 +309,14 @@ python3 PVDP/Scripts/PVDP.py -seq1 <file location> -seq2 <file location>
 For example, to analyze the datasets testData_SPhureja_1.fastq.gz and testData_SPhureja_2.fastq.gz, type:
 
 ```markdown
-python3 PVDP/Scripts/plantVirusDetectionV2.py -seq1 Datasets/testData_SPhureja_1.fastq.gz -seq2 Datasets/testData_SPhureja_2.fastq.gz
+python3 PVDP/Scripts/PVDP.py -seq1 Datasets/testData_SPhureja_1.fastq.gz -seq2 Datasets/testData_SPhureja_2.fastq.gz
 ```
-
-The output should be similar to the previous example
 
 ### Executing PVDP with removal of host sequences
 
 ### Executing PVDP on a data subset
 
-### Genearation of the HTML report 
+### Generation of the HTML report 
 
 Open the terminal or the command prompt and go to the folder where the downloaded files are located.
 
