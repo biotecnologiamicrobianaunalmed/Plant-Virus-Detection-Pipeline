@@ -137,8 +137,167 @@ For example, to run the dataset testData_SPhureja_1.fastq.gz, type:
 ```markdown
 python3 PVDP/Scripts/PVDP.py -seq1 Datasets/testData_SPhureja_1.fastq.gz 
 ```
+When run correctly you should get the following output in the screen:
 
+```markdown
 
+==========================================
+       Plant Virus Detection Program
+==========================================
+Parameters
+Sequence file 1:	 Datasets/testData_SPhureja_1.fastq.gz
+Sequence file 2:	 None
+Host dababase:		 None
+Number of processors:	 2
+Output folder:		 None
+Subset size:		 None
+Remove bad reads:	 False
+Top nr sequences:	 None
+Abundance threshold:	 None
+
+==========================================
+ Step 1: Removal of redundant sequences
+==========================================
+Verifying file testData_SPhureja_1.fastq.gz
+gz is an accepted file extension
+Processing file:  testData_SPhureja_1.fastq
+
+Total sequences:	 1000000
+Non-redundant sequences: 417828
+Redundancy:		 58.2%
+
+Execution time of step 1: 25.619 seconds
+
+==========================================
+ Step 2: Host filter
+==========================================
+Filtering step was not chosen.
+Continuing with virus detection step.
+
+Execution time of step 2: 0.011 seconds
+
+==========================================
+ Step 3: Virus Detection
+==========================================
+Running testData_SPhureja_1_nr.fa  against  PlantVirusesDB_0420v4_masked
+
+Execution time of step 3: 473.208 seconds
+
+==========================================
+                 Results
+==========================================
+Detected viruses:
+
+Potato_virus_X (Potexvirus/Alphaflexiviridae) :
+  Reads per million:		6389.0 
+  Counts:			6389 
+  Median E-value:		2.6e-43 
+  Average percent identity:	98.2 
+  Eveness:			0.97 
+  Residuals(stdv):		6.74 
+  Probability:			100.0
+
+Potato_virus_S (Carlavirus/Betaflexiviridae) :
+  Reads per million:		4249.0 
+  Counts:			4249 
+  Median E-value:		2.2e-44 
+  Average percent identity:	98.9 
+  Eveness:			0.9 
+  Residuals(stdv):		17.4 
+  Probability:			99.9
+
+Potato_virus_V (Potyvirus/Potyviridae) :
+  Reads per million:		2095.0 
+  Counts:			2095 
+  Median E-value:		5.1e-46 
+  Average percent identity:	97.9 
+  Eveness:			0.96 
+  Residuals(stdv):		5.16 
+  Probability:			100.0
+
+Potato_yellow_vein_virus(RNA2) (Crinivirus/Closteroviridae) :
+  Reads per million:		77.0 
+  Counts:			77 
+  Median E-value:		5.1e-46 
+  Average percent identity:	99.5 
+  Eveness:			0.81 
+  Residuals(stdv):		5.8 
+  Probability:			99.9
+
+Potato_yellow_vein_virus(RNA3) (Crinivirus/Closteroviridae) :
+  Reads per million:		65.0 
+  Counts:			65 
+  Median E-value:		5.1e-46 
+  Average percent identity:	99.5 
+  Eveness:			0.79 
+  Residuals(stdv):		10.24 
+  Probability:			99.8
+
+Potato_virus_Y (Potyvirus/Potyviridae) :
+  Reads per million:		61.0 
+  Counts:			61 
+  Median E-value:		5.1e-46 
+  Average percent identity:	99.4 
+  Eveness:			0.77 
+  Residuals(stdv):		7.07 
+  Probability:			99.8
+
+Potato_mop-top_virus(RNA2) (Pomovirus/Virgaviridae) :
+  Reads per million:		38.0 
+  Counts:			38 
+  Median E-value:		5.1e-46 
+  Average percent identity:	99.6 
+  Eveness:			0.69 
+  Residuals(stdv):		9.75 
+  Probability:			99.2
+
+putative_Tobamovirus (Tobamovirus/Virgaviridae) :
+  Reads per million:		30.0 
+  Counts:			30 
+  Median E-value:		2.5e-18 
+  Average percent identity:	85.8 
+  Eveness:			0.65 
+  Residuals(stdv):		10.69 
+  Probability:			98.5
+
+Potato_mop-top_virus(RNA1) (Pomovirus/Virgaviridae) :
+  Reads per million:		28.0 
+  Counts:			28 
+  Median E-value:		1.1e-45 
+  Average percent identity:	99.6 
+  Eveness:			0.69 
+  Residuals(stdv):		21.09 
+  Probability:			98.1
+
+Potato_yellow_vein_virus(RNA1) (Crinivirus/Closteroviridae) :
+  Reads per million:		21.0 
+  Counts:			21 
+  Median E-value:		2.2e-44 
+  Average percent identity:	98.3 
+  Eveness:			0.57 
+  Residuals(stdv):		16.14 
+  Probability:			92.9
+
+Potato_mop-top_virus(RNA3) (Pomovirus/Virgaviridae) :
+  Reads per million:		18.0 
+  Counts:			18 
+  Median E-value:		5.1e-46 
+  Average percent identity:	99.8 
+  Eveness:			0.55 
+  Residuals(stdv):		28.8 
+  Probability:			77.5
+
+putative_Solendovirus (Solendovirus/Caulimoviridae) :
+  Reads per million:		12.0 
+  Counts:			12 
+  Median E-value:		1.5e-17 
+  Average percent identity:	83.3 
+  Eveness:			0.46 
+  Residuals(stdv):		9.34 
+  Probability:			82.2
+
+Total execution time: 498.854 seconds
+```
 ### Executing PVDP with removal of host sequences
 
 ### Executing PVDP on a data subset
