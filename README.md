@@ -347,9 +347,9 @@ The following table illustrates the parameters currently available for the execu
 ```markdown
 python Scripts/PVDP.py -seq1 <file_route> [options]
 ```
-| Column 1       | Column 2     | Column 3     |
+| Parameter       | Description     | Type     |
 | :------------- | :----------: | -----------: |
-|  Cell Contents | More Stuff   | And Again    |
+|  -seq1(required) | Path to sequence file 1   | String    |
 | You Can Also   | Put Pipes In | Like this \| |
 
 
