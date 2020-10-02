@@ -128,11 +128,15 @@ Once the download is complete, locate the file in your preferred folder and unzi
 ## Examples
 
 ### Executing PVDP with default parameters with a single dataset
+To analize a single dataset without using a host filter database type the following from the PVDP folder:
 
 ```markdown
-python Scripts/plantVirusDetectionV2.py -seq1 Files/data.fastq
+python3 PVDP/Scripts/PVDP.py -seq1 file_location
 ```
-
+For example, to run the dataset testData_SPhureja_1.fastq.gz, type the following:
+```markdown
+python3 PVDP/Scripts/PVDP.py -seq1 Datasets/testData_SPhureja_1.fastq.gz 
+```
 ### Executing PVDP with removal of host sequences
 
 ### Executing PVDP on a data subset
