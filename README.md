@@ -127,7 +127,11 @@ Once the download is complete, locate the file in your preferred folder and unzi
 
 ## Examples
 
-### Executing PVDP with a subset of data using default parameters
+### Executing PVDP with default parameters with a single dataset
+
+```markdown
+python Scripts/plantVirusDetectionV2.py -seq1 Files/data.fastq
+```
 
 ### Executing PVDP with removal of host sequences
 
