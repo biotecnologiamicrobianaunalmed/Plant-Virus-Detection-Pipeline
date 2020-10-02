@@ -127,11 +127,11 @@ Once the download is complete, locate the file in your preferred folder and unzi
 
 ## Examples
 
-### Executing PVDP with default parameters with a single dataset
+### Executing PVDP with default parameters using a single dataset
 To analize a single dataset without using a host filter database type the following from the PVDP folder:
 
 ```markdown
-python3 PVDP/Scripts/PVDP.py -seq1 file_location
+python3 PVDP/Scripts/PVDP.py -seq1 <file location> 
 ```
 For example, to run the dataset testData_SPhureja_1.fastq.gz, type:
 ```markdown
@@ -299,6 +299,21 @@ putative_Solendovirus (Solendovirus/Caulimoviridae) :
 
 Total execution time: 498.854 seconds
 ```
+
+### Executing PVDP with default parameters using a single dataset
+For paired-end data, just add the mate dataset set using the parameter -seq2 as shown in the example below:
+
+```markdown
+python3 PVDP/Scripts/PVDP.py -seq1 <file location> -seq2 <file location> 
+```
+For example, to analyze the datasets testData_SPhureja_1.fastq.gz and testData_SPhureja_2.fastq.gz, type:
+
+```markdown
+python3 PVDP/Scripts/plantVirusDetectionV2.py -seq1 Datasets/testData_SPhureja_1.fastq.gz -seq2 Datasets/testData_SPhureja_2.fastq.gz
+```
+
+The output should be similar to the previous example
+
 ### Executing PVDP with removal of host sequences
 
 ### Executing PVDP on a data subset
