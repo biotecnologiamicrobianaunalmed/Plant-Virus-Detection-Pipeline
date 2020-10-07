@@ -1,4 +1,4 @@
-# PVDP 1.0.1 Manual
+# PVDP Manual
 
 * [General info](#Info)
 * [Supported data](#Data)
