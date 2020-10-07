@@ -93,26 +93,8 @@ Detailed instructions on how to Install R, RStudio and R Packages can be found [
 
 PVDP scripts and test files can be downloaded [here](https://drive.google.com/drive/folders/1_sSTEjxtYMMA_Sc5TJo3LOMfuBjHZA2t?usp=sharing)
 
-Once the download is complete, locate the file in your preferred folder and unzip it; when you do this you will find the following structure:
+PDVD should have the following folder structure:
 
-<img src="/assets/FileStructure.gif"/>
-
-```markdown
------>Scripts
-       >hostFilterV2.py
-       >nonRedundantSequencesV2.py
-       >plantVirusDetectionV2.py
-       >selectionOfPositives
-       >virusBLASTV2.py
-       >VirusReport.Rmd
-       
------>Databases (18 files)
-       >PlantVirusesDB_0420v4_masked.(naa, nab, nac, nhr, nin, nog, nsd, nsi, nsq).
-       >Potato_masked.(naa, nab, nac, nhr, nin, nog, nsd, nsi, nsq).
-       
------>Files
-       >data.fastq
-```
 
 ***The last update of the viral database was made on April, 2020.***
 
@@ -127,7 +109,7 @@ To analize a single dataset without using a host filter database type the follow
 ```markdown
 python3 PVDP/Scripts/PVDP.py -seq1 <file location> 
 ```
-For example, to run the dataset testData_SPhureja_1.fastq.gz, type:
+To run the dataset testData_SPhureja_1.fastq.gz, move to the PVDP_dir and type the following:
 ```markdown
 python3 PVDP/Scripts/PVDP.py -seq1 Datasets/testData_SPhureja_1.fastq.gz 
 ```
