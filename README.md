@@ -32,7 +32,7 @@ PVDP supports single- or paired-end data in either fasta or fastq format. Datase
 ## Pipeline
 
 The plant virus detection pipeline comprises four python scripts (*nonRedundantSequences.py*, *genomeBLAST.py*, *virusBLAST.py*, and *outputTables.py*)
-that can be executed in a single step using the *PlantVirusDetection.py* script.
+that can be executed in a single step using the *PVDP.py* script.
 
  ***nonRedundantSequences.py*** removes redundant sequences from the dataset and transforms it into a fasta file of non-redundant sequences ordered by abundance and labelled with a unique identifier that contains information on the rank and the number of counts in the original dataset.
 
