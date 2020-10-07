@@ -89,7 +89,7 @@ Please go to the official [RStudio](https://rstudio.com/products/rstudio/downloa
 Detailed instructions on how to Install R, RStudio and R Packages can be found [here](https://data-flair.training/blogs/how-to-install-r/)
 
 <a name="Installation"></a>
-## PVDP Installation
+## Installation
 
 PVDP scripts and test files can be downloaded [here](https://drive.google.com/drive/folders/1_sSTEjxtYMMA_Sc5TJo3LOMfuBjHZA2t?usp=sharing). Just download the files and place them where you find it convenient. Files should have the following folder structure:
 
@@ -277,7 +277,7 @@ python Scripts/PVDP.py -seq1 <file_route> [options]
 |  -threshold| Removes non-redundant reads with low abundance   | Integer    |
 
 
-### Generation of the HTML report 
+## Generation of the HTML report 
 
 
 <a name="HTML report"></a>
@@ -308,9 +308,6 @@ The process ends once the bar loads completely. Then it is possible to **Knit** 
 ![Structure](/assets/rstudio3.png)
 
 You can close the window, the report is saved in the **Scripts** folder, under the name of *VirusReport.html*. It is recommended to change the file name or change folder, because if the script is executed with another data set it will be overwritten.
-
-
-----
 
 
 <a name="Issues"></a>
@@ -346,11 +343,10 @@ You can close the window, the report is saved in the **Scripts** folder, under t
     Your version of Python is lower than the third. Please update it.
     ```
 
-
 <a name="Support"></a>
 ## Support
 
-Having troubles? Please contact us at: lab labmicrobiologia_med@unal.edu.co. Please write "PVDP help" in the subject. 
+Need help running PVDP? Please contact us at lab labmicrobiologia_med@unal.edu.co. Please write "PVDP help" in the subject. 
 
 <a name="Citation"></a>
 ## Citation
