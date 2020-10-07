@@ -277,9 +277,6 @@ python Scripts/PVDP.py -seq1 <file_route> [options]
 |  -threshold| Removes non-redundant reads with low abundance   | Integer    |
 
 
-
-
-
 ### Generation of the HTML report 
 
 Open the terminal or the command prompt and go to the folder where the downloaded files are located.
@@ -303,54 +300,7 @@ Then press enter and please be patient. The program displays messages in the ter
 The results folder includes eight tables in tsv (tab-separated values) format that summarize the running parameters, composition of the dataset, a curated table of results, and a summary of countries, host and references related to the viruses detected in the sample. These tables can be opened with standard spreadsheet programs or formatted as a user-friendly html report with Rstudio. 
 
 <ins>Tip:</ins> When analyzing your own files it is recommended to put the files in the **Files** folder or directly in the pvdp folder, otherwise it is necessary to specify the full path of where they are located.
-## PVDP examples
 
-The program can receive multiple arguments, the most essential cases are described below:
-
-* Single- reads:
-
-    ```markdown
-    python Scripts/plantVirusDetectionV2.py -seq1 <file_route>
-    ```
-
-* Paired-end reads:
-
-    ```markdown
-    python Scripts/plantVirusDetectionV2.py -seq1 <file_route> -seq2 <file2_route>
-    ```
-
-* Single- **or** paired-end reads, using a host database as a filter (currently only one database belonging to potato is available):
-
-    ```markdown
-    python Scripts/plantVirusDetectionV2.py -seq1 <file_route> -hostdb Potato_masked
-    ```
-
-    ```markdown
-    It is not necessary to specify the path of Potato_masked, the program searches by default in the Databases folder.
-    ```
-
-* Single- **or** paired-end reads, using a specific amount of reads, e.g. 1000000. It is recommended to use this parameter when the data is very large and also to carry out an initial exploration of it (also to fix MemoryError in Step 1):
-
-    ```markdown
-    python Scripts/plantVirusDetectionV2.py -seq1 <file_route> -subset 1000000
-    ```
-
-* Single- **or** paired-end, using a specific amount of processors, e.g. 5 (the default quantity is 2):
-
-    ```markdown
-    python Scripts/plantVirusDetectionV2.py -seq1 <file_route> -num_threads 5
-    ```
-
-* More information about the arguments is available by executing the following command:
-
-    ```markdown
-    python Scripts/plantVirusDetectionV2.py --help
-    ```
-
-*Each argument is unique, but they can be combined at will.*
-
-
-----
 
 
 <a name="HTML report"></a>
