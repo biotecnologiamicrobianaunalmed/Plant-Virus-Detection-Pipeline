@@ -112,7 +112,7 @@ py PVDP/Scripts/PVDP.py -seq1 <file location>
 ```
 or 
 ```markdown
-python3 PVDP/Scripts/PVDP.py -seq1 <file location> 
+python PVDP/Scripts/PVDP.py -seq1 <file location> 
 ```
 instead
 
