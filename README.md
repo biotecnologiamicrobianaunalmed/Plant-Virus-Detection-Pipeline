@@ -91,9 +91,7 @@ Detailed instructions on how to Install R, RStudio and R Packages can be found [
 <a name="Installation"></a>
 ## PVDP Installation
 
-PVDP scripts and test files can be downloaded [here](https://drive.google.com/drive/folders/1_sSTEjxtYMMA_Sc5TJo3LOMfuBjHZA2t?usp=sharing)
-
-PDVD should have the following folder structure:
+PVDP scripts and test files can be downloaded [here](https://drive.google.com/drive/folders/1_sSTEjxtYMMA_Sc5TJo3LOMfuBjHZA2t?usp=sharing). Just download the files and place them where you find it convenient. Files should have the following folder structure:
 
 <img src="/assets/FileStructure.gif"/>
 
