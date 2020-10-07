@@ -95,8 +95,7 @@ PVDP scripts and test files can be downloaded [here](https://drive.google.com/dr
 
 PDVD should have the following folder structure:
 
-
-***The last update of the viral database was made on April, 2020.***
+<img src="/assets/FileStructure.gif"/>
 
 
 <a name="Examples"></a>
