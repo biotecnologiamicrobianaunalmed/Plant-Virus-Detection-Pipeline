@@ -89,7 +89,9 @@ Please go to the official [RStudio](https://rstudio.com/products/rstudio/downloa
 Detailed instructions on how to Install R, RStudio and R Packages can be found [here](https://data-flair.training/blogs/how-to-install-r/)
 
 <a name="Installation"></a>
-## Installation
+## PVDP Installation
+
+PVDP scripts and test files can be downloaded [here](https://drive.google.com/drive/folders/1_sSTEjxtYMMA_Sc5TJo3LOMfuBjHZA2t?usp=sharing)
 
 Once the download is complete, locate the file in your preferred folder and unzip it; when you do this you will find the following structure:
 
