@@ -79,8 +79,7 @@ Try **py** or **python3** instead. It is important to remember the option that w
 
 **RStudio**
 
-Please go to the official [RStudio](https://rstudio.com/products/rstudio/download/) page and install the correct version for you operating system (RStudio requires an installation of R). The following packages need to be installed:
-
+Please go to the official [RStudio](https://rstudio.com/products/rstudio/download/) page and install the correct version for you operating system (RStudio requires an installation of R). The following packages are required:
 
 * ggplot2
 * RColorBrewer
