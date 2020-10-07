@@ -279,29 +279,6 @@ python Scripts/PVDP.py -seq1 <file_route> [options]
 
 ### Generation of the HTML report 
 
-Open the terminal or the command prompt and go to the folder where the downloaded files are located.
-
-<ins>Help:</ins> If you want to know how to move between folders in the terminal or command prompt, check the following [link](https://biotecnologiamicrobianaunalmed.github.io/terminal-basics/).
-
-To execute the program it is necessary to run the main script and give it the path of at least one fastq/fasta file. The main script is called ***plantVirusDetectionV2.py*** and it's located in the folder ***Scripts***. The general sctructure is: 
-
-```markdown
-python Scripts/plantVirusDetectionV2.py -seq1 <file_route> [options]
-```
-
-e.g. the following command is used to run the test data with the default options:
-
-```markdown
-python Scripts/plantVirusDetectionV2.py -seq1 Files/data.fastq
-```
-
-Then press enter and please be patient. The program displays messages in the terminal to inform about the step it is in. If everything works correctly you can see at the end the detected viruses in a summarized way. Also you can find the results in the *Files* folder.
-
-The results folder includes eight tables in tsv (tab-separated values) format that summarize the running parameters, composition of the dataset, a curated table of results, and a summary of countries, host and references related to the viruses detected in the sample. These tables can be opened with standard spreadsheet programs or formatted as a user-friendly html report with Rstudio. 
-
-<ins>Tip:</ins> When analyzing your own files it is recommended to put the files in the **Files** folder or directly in the pvdp folder, otherwise it is necessary to specify the full path of where they are located.
-
-
 
 <a name="HTML report"></a>
 ## Generating user-friendly HTML report with RStudio
