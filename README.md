@@ -277,13 +277,18 @@ python Scripts/PVDP.py -seq1 <file_route> [options]
 |  -threshold| Removes non-redundant reads with low abundance   | Integer    |
 
 
+<a name="HTML report"></a>
 ## Generation of the HTML report 
 
+To generate a user-friendly html report, do the following:
 
-<a name="HTML report"></a>
-## Generating user-friendly HTML report with RStudio
+* Open the **VirusReport.Rmd** script in Rstudio
 
-When the process ends it is possible to create the graphic report in html format. To do this you need to open the file **VirusReport.Rmd** in Rstudio and have the required packages installed. **VirusReport.Rmd** is located in the **Scripts** folder.
+![Structure](/assets/rstudio1.png)
+
+
+using the **VirusReport.Rmd** script.
+
 
 First modify the ***path_to_files*** variable directly in the script (line 14), specifying the full path to the Tables folder (1) found in the results folder that can be found in **Files/Results_data** (in the case of test data). Make sure that the path ends with a slash, otherwise you may get an error, i.e. **../Tables/**.
 
