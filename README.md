@@ -215,6 +215,10 @@ Potato_yellow_vein_virus(RNA2) (Crinivirus/Closteroviridae) :
 Total execution time: 498.854 seconds
 ```
 
+A results folder with the following structure will be created:
+
+<img src="/assets/ResultsFolder.gif"/>
+
 ### Executing PVDP with default parameters using paired-end data
 For paired-end data, just add the mate dataset set using the parameter -seq2 as shown in the example below:
 
