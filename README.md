@@ -284,8 +284,7 @@ To generate a user-friendly html report, do the following:
 
 * Open the **VirusReport.Rmd** script in Rstudio
 
-![Structure](/assets/rstudio1.png)
-
+![Structure](/assets/RMarkdown.gif)
 
 using the **VirusReport.Rmd** script.
 
