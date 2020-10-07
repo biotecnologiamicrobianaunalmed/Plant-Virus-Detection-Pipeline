@@ -54,21 +54,21 @@ Please go to the official [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=W
 **Python**
 
 Please go to the official [Python](https://www.python.org/downloads/)
-page and install the correct version (3.7+) for you operating system. To verify that python was installed properly, open the terminal and type: 
+page and install the right version (3.7+) for you operating system. To verify that python was installed properly, open the terminal and type: 
 
 ```sh
 python  --version
 ```
 
-The installation was successful if you get a message like:
+The installation was successful if you get a message like this:
 
 ```markdown
 Python 3.x.x
 ```
 
-<ins>Important</ins>: *If you have a version lower than Python 3, the tool may not work correctly.*
+<ins>Important</ins>: *PVDP may not not correctly under earlier python releases.*
 
-If you get an **error** like:
+If you get an **error** like this:
 
 ```markdown
 "python" is not recognized as an internal or external command, operable program or batch file.
@@ -81,12 +81,12 @@ Try **py** or **python3** instead. It is important to remember the option that w
 
 Please go to the official [RStudio](https://rstudio.com/products/rstudio/download/) page and install the correct version for you operating system (RStudio requires an installation of R). The following packages need to be installed:
 
-```markdown
-- ggplot2
-- RColorBrewer
-- knitr
-- rmarkdown
-```
+
+* ggplot2
+* RColorBrewer
+* knitr
+* rmarkdown
+
 Detailed instructions on how to Install R, RStudio and R Packages can be found [here](https://data-flair.training/blogs/how-to-install-r/)
 
 <a name="Installation"></a>
