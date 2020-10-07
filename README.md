@@ -208,77 +208,9 @@ Potato_yellow_vein_virus(RNA2) (Crinivirus/Closteroviridae) :
   Residuals(stdv):		5.8 
   Probability:			99.9
 
-Potato_yellow_vein_virus(RNA3) (Crinivirus/Closteroviridae) :
-  Reads per million:		65.0 
-  Counts:			65 
-  Median E-value:		5.1e-46 
-  Average percent identity:	99.5 
-  Eveness:			0.79 
-  Residuals(stdv):		10.24 
-  Probability:			99.8
-
-Potato_virus_Y (Potyvirus/Potyviridae) :
-  Reads per million:		61.0 
-  Counts:			61 
-  Median E-value:		5.1e-46 
-  Average percent identity:	99.4 
-  Eveness:			0.77 
-  Residuals(stdv):		7.07 
-  Probability:			99.8
-
-Potato_mop-top_virus(RNA2) (Pomovirus/Virgaviridae) :
-  Reads per million:		38.0 
-  Counts:			38 
-  Median E-value:		5.1e-46 
-  Average percent identity:	99.6 
-  Eveness:			0.69 
-  Residuals(stdv):		9.75 
-  Probability:			99.2
-
-putative_Tobamovirus (Tobamovirus/Virgaviridae) :
-  Reads per million:		30.0 
-  Counts:			30 
-  Median E-value:		2.5e-18 
-  Average percent identity:	85.8 
-  Eveness:			0.65 
-  Residuals(stdv):		10.69 
-  Probability:			98.5
-
-Potato_mop-top_virus(RNA1) (Pomovirus/Virgaviridae) :
-  Reads per million:		28.0 
-  Counts:			28 
-  Median E-value:		1.1e-45 
-  Average percent identity:	99.6 
-  Eveness:			0.69 
-  Residuals(stdv):		21.09 
-  Probability:			98.1
-
-Potato_yellow_vein_virus(RNA1) (Crinivirus/Closteroviridae) :
-  Reads per million:		21.0 
-  Counts:			21 
-  Median E-value:		2.2e-44 
-  Average percent identity:	98.3 
-  Eveness:			0.57 
-  Residuals(stdv):		16.14 
-  Probability:			92.9
-
-Potato_mop-top_virus(RNA3) (Pomovirus/Virgaviridae) :
-  Reads per million:		18.0 
-  Counts:			18 
-  Median E-value:		5.1e-46 
-  Average percent identity:	99.8 
-  Eveness:			0.55 
-  Residuals(stdv):		28.8 
-  Probability:			77.5
-
-putative_Solendovirus (Solendovirus/Caulimoviridae) :
-  Reads per million:		12.0 
-  Counts:			12 
-  Median E-value:		1.5e-17 
-  Average percent identity:	83.3 
-  Eveness:			0.46 
-  Residuals(stdv):		9.34 
-  Probability:			82.2
+...
+...
+...
 
 Total execution time: 498.854 seconds
 ```
