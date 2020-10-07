@@ -106,6 +106,16 @@ To analize a single dataset without using a host filter database type the follow
 ```markdown
 python3 PVDP/Scripts/PVDP.py -seq1 <file location> 
 ```
+if python launches using the command py or python, type:
+```markdown
+py PVDP/Scripts/PVDP.py -seq1 <file location> 
+```
+or 
+```markdown
+python3 PVDP/Scripts/PVDP.py -seq1 <file location> 
+```
+instead
+
 To run the dataset testData_SPhureja_1.fastq.gz, move to the PVDP_dir and type the following:
 ```markdown
 python3 PVDP/Scripts/PVDP.py -seq1 Datasets/testData_SPhureja_1.fastq.gz 
