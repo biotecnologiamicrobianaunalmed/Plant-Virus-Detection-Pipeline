@@ -48,17 +48,8 @@ Crude results are processed using the ***outputTables.py*** script, which remove
 ## Prerequisites
 **BLAST**
 
-Please go to  the official [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download) page and install the correct version for you operating system. To verify that BLAST that installed properly, open the terminal and type: 
-
-```sh
-blastn
-```
-
-The installation was **successful** if you get the following message:
-
-```markdown
-BLAST query/options error : Either a BLAST database or subject sequence(s) must be specified. Please refer to the BLAST+ user manual.
-```
+Please go to  the official [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download) 
+Installation instructions can be found [here](https://www.ncbi.nlm.nih.gov/books/NBK279671/)
 
 
 **Python**
