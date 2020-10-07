@@ -283,12 +283,12 @@ python Scripts/PVDP.py -seq1 <file_route> [options]
 To generate a user-friendly html report, do the following:
 
 * Open the **VirusReport.Rmd** script in Rstudio and specify the path to your Tables folder. For example, to view results saved  in the  path 
-<em>/Users/name/Documents/PVDP_dir/PVDP/Datasets/Results_testData_SPhureja_1_pe/Tables<em>, the **VirusReport.Rmd** script should look like this:
+<em>/Users/name/Documents/PVDP_dir/PVDP/Datasets/Results_testData_SPhureja_1_pe/Tables/</em>, the **VirusReport.Rmd** script should look like this:
 
 ![Structure](/assets/RMarkdown.gif)
 
+You do not need to change anything else in the script.
 
-using the **VirusReport.Rmd** script.
 
 
 First modify the ***path_to_files*** variable directly in the script (line 14), specifying the full path to the Tables folder (1) found in the results folder that can be found in **Files/Results_data** (in the case of test data). Make sure that the path ends with a slash, otherwise you may get an error, i.e. **../Tables/**.
