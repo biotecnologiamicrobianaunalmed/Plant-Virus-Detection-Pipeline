@@ -48,8 +48,9 @@ Crude results are processed using the ***outputTables.py*** script, which remove
 ## Prerequisites
 **BLAST**
 
-Please go to  the official [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download) 
-Installation instructions can be found [here](https://www.ncbi.nlm.nih.gov/books/NBK279671/)
+Please go to the official [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download) page and install. 
+
+ Instructions can be found [here](https://www.ncbi.nlm.nih.gov/books/NBK279671/)
 
 
 **Python**
