@@ -95,6 +95,8 @@ PVDP scripts and test files can be downloaded [here](https://drive.google.com/dr
 
 Once the download is complete, locate the file in your preferred folder and unzip it; when you do this you will find the following structure:
 
+<img src="/assets/FileStructure.gif" alt="drawing" width="600"/>
+
 ```markdown
 ----->Scripts
        >hostFilterV2.py
