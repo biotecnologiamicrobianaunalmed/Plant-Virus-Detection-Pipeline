@@ -295,7 +295,9 @@ You do not need to change anything else in the script.
 
 ![Structure](/assets/Knit.gif)
 
-* The HTML report should something like this:
+* Examples of the HMTL report can be downloaded [here](https://drive.google.com/drive/folders/1_qs2AmvIDZDVvMYmauwVO0svxa2K0tt8?usp=sharing)
+
+* The HTML report should have the following information:
 
 
 
