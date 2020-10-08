@@ -282,12 +282,10 @@ python Scripts/PVDP.py -seq1 <file_route> [options]
 
 To generate a user-friendly html report, do the following:
 
-* Open the **VirusReport.Rmd** script in Rstudio and specify the path to your Tables folder. For example, to view results saved  in the  path 
-<em>/Users/name/Documents/PVDP_dir/PVDP/Datasets/Results_testData_SPhureja_1_pe/Tables/</em>.
-
 * A copy of the **VirusReport.Rmd** script can be found in the Scripts directory of PVDP, make a copy and move it to any convenient location.
 
-* The **VirusReport.Rmd** script should look like this:
+* Open the **VirusReport.Rmd** script in Rstudio and specify the path to your Tables folder. For example, to view results saved  in the  path 
+<em>/Users/name/Documents/PVDP_dir/PVDP/Datasets/Results_testData_SPhureja_1_pe/Tables/</em>. The **VirusReport.Rmd** script should look like this:
 
 ![Structure](/assets/RMarkdown.gif)
 
