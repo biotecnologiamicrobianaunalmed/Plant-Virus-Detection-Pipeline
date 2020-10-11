@@ -267,7 +267,7 @@ python Scripts/PVDP.py -seq1 <file_route> [options]
 ```
 
 | Parameter | Description | Type |
-| :--------- | :--------- | :--------- |
+| :-------------------- | :--------- | :--------- |
 | -seq1(required) | Path to sequence file 1 | String |
 | -seq2 | Path to sequence file 2 | String |
 | -hostdb | Path to BLAST database of host sequences | String |
