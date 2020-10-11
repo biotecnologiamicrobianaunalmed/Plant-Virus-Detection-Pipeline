@@ -42,7 +42,7 @@ Host sequences can be removed prior to the virus detection step using ***genomeB
 
 Crude results are processed using the ***outputTables.py*** script, which removes hits with low certainty. Plain results are saved in the *Tables* directory and can be converted into a user friendly html report using ***virusReport.R*** script in Rstudio.
 
-<img src="/assets/Fig1_400dpi.png" alt="drawing" width="600"/>
+![Drawing](/assets/Fig1_400dpi.png)
 
 <a name="Prerequisites"></a>
 ## Prerequisites
@@ -93,7 +93,7 @@ Detailed instructions on how to Install R, RStudio and R Packages can be found [
 
 PVDP scripts and test files can be downloaded [here](https://drive.google.com/drive/folders/1_sSTEjxtYMMA_Sc5TJo3LOMfuBjHZA2t?usp=sharing). Just download the files and place them where you find it convenient. Files should have the following folder structure:
 
-<img src="/assets/FileStructure.gif"/>
+![Drawing](/assets/FileStructure.gif)
 
 
 <a name="Examples"></a>
@@ -217,7 +217,7 @@ Total execution time: 498.854 seconds
 
 A results folder with the following structure will be created:
 
-<img src="/assets/ResultsFolder.gif"/>
+![Drawing](/assets/ResultsFolder.gif)
 
 ### Executing PVDP with default parameters using paired-end data
 For paired-end data, just add the mate dataset set using the parameter -seq2 as shown in the example below:
@@ -266,7 +266,7 @@ The following table illustrates the parameters currently available for the execu
 python Scripts/PVDP.py -seq1 <file_route> [options]
 ```
 | Parameter       | Description     | Type     |
-| :------------- | :---------- | :----------- |
+| :-------------: | :----------: | :-----------: |
 |  -seq1(required) | Path to sequence file 1   | String    |
 |  -seq2 | Path to sequence file 2   | String    |
 |  -hostdb| Path to BLAST database of host sequences   | String    |
