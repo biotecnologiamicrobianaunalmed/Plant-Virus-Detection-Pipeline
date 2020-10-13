@@ -301,9 +301,7 @@ You do not need to change anything else in the script.
 
      * The initial part of the report summarizes the execution parameters, and the information about the datasets and databases used in the analysis:
      
-
-
-![Structure](/assets/Report1.gif)
+![Report1](/assets/Report1b.gif)
 
 
 
