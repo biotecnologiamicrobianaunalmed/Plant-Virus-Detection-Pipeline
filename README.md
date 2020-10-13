@@ -306,6 +306,9 @@ You do not need to change anything else in the script.
      
 ![Report3](/assets/Identified_viruses.gif)
 
+* The coverage of each virus is represented as a box plot where each dot represents the relative mapping position of each read. The color intensity represents the similarity of each read to known viruses:
+
+![Report4](/assets/coverage.gif)
 
 You can close the window, the report is saved in the **Scripts** folder, under the name of *VirusReport.html*. It is recommended to change the file name or change folder, because if the script is executed with another data set it will be overwritten.
 
