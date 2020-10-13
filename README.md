@@ -299,8 +299,8 @@ You do not need to change anything else in the script.
 
 * An example of the HMTL report can be downloaded [here](https://drive.google.com/drive/folders/1_qs2AmvIDZDVvMYmauwVO0svxa2K0tt8?usp=sharing)
 
-* The HTML report should have the following information:
-
+     * The initial part of the report summarizes the execution parameters, and the information about the datasets and databases used in the analysis:
+     
 
 ![Structure](/assets/Report1.gif)
 
