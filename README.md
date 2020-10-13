@@ -298,14 +298,17 @@ You do not need to change anything else in the script.
 ![Structure](/assets/Knit.gif)
 
 * An example of the HMTL report can be downloaded [here](https://drive.google.com/drive/folders/1_qs2AmvIDZDVvMYmauwVO0svxa2K0tt8?usp=sharing)
-* The initial part of the report summarizes the execution parameters, and the information about the datasets and databases used in the analysis:
+
+The initial part of the report summarizes the execution parameters, and the information about the datasets and databases used in the analysis:
      
 ![Report1](/assets/Report1.gif)
      
-* The relative abundance and average percent identity to viruses in the database is presented as bubble plot. The acompanying table gives an estimate of the certainty of the prediction, number of reads for each of the plant viruses predicted to be present in the sample:
+The second part illustrates the composition of the dataset. Viral sequences are highlighted in pink:   
      
 ![Report2](/assets/Report2.gif)    
- 
+
+The relative abundance and average percent identity to viruses in the database is presented as bubble plot. The acompanying table gives an estimate of the certainty of the prediction, number of reads for each of the plant viruses predicted to be present in the sample:
+
 ![Report3](/assets/Report3.gif)    
 
 * The coverage of each virus is represented as a box plot where each dot represents the relative mapping position of each read. The color intensity represents the similarity of each read to known viruses:
