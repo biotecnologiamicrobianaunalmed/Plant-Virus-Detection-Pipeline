@@ -284,8 +284,6 @@ python Scripts/PVDP.py -seq1 <file_route> [options]
 <a name="HTML report"></a>
 ## Generation of the HTML report 
 
-To generate a user-friendly html report, do the following:
-
 * A copy of the **VirusReport.Rmd** script can be found in the Scripts directory of PVDP, make a copy and move it to any convenient location. You can also get the script [here](https://drive.google.com/drive/folders/1J1bNkDBAkruLzZVv41tHV030yDH6YVoX?usp=sharing)
 
 * Open the **VirusReport.Rmd** script in Rstudio and specify the path to your Tables folder. For example, to view results saved  in the  path 
@@ -302,6 +300,9 @@ You do not need to change anything else in the script.
 * An example of the HMTL report can be downloaded [here](https://drive.google.com/drive/folders/1_qs2AmvIDZDVvMYmauwVO0svxa2K0tt8?usp=sharing)
 
 * The HTML report should have the following information:
+
+
+![Structure](/assets/Report1.gif)
 
 
 
