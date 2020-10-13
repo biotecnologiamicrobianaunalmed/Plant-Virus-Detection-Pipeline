@@ -298,12 +298,13 @@ You do not need to change anything else in the script.
 ![Structure](/assets/Knit.gif)
 
 * An example of the HMTL report can be downloaded [here](https://drive.google.com/drive/folders/1_qs2AmvIDZDVvMYmauwVO0svxa2K0tt8?usp=sharing)
-
-     * The initial part of the report summarizes the execution parameters, and the information about the datasets and databases used in the analysis:
+* The initial part of the report summarizes the execution parameters, and the information about the datasets and databases used in the analysis:
      
 ![Report1](/assets/Report1b.gif)
-
-
+     
+* The relative abundance and average percent identity to viruses in the database is presented as bubble plot. The acompanying table gives an estimate of the certainty of the prediction, number of reads for each of the plant viruses predicted to be present in the sample:
+     
+![Report3](/assets/Identified_viruses.gif)
 
 
 You can close the window, the report is saved in the **Scripts** folder, under the name of *VirusReport.html*. It is recommended to change the file name or change folder, because if the script is executed with another data set it will be overwritten.
