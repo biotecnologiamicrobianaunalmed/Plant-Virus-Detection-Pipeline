@@ -109,21 +109,24 @@ To analize a single dataset without using a host filter database type the follow
 ```markdown
 python3 PVDP/Scripts/PVDP.py -seq1 <file location> 
 ```
-if python launches using the command py or python, type:
+If python3 is not recognized use the command py or python, type:
+
 ```markdown
 py PVDP/Scripts/PVDP.py -seq1 <file location> 
 ```
+
 or 
+
 ```markdown
 python PVDP/Scripts/PVDP.py -seq1 <file location> 
 ```
-instead
 
 To run the dataset testData_SPhureja_1.fastq.gz, move to the PVDP_dir and type the following:
 ```markdown
 python3 PVDP/Scripts/PVDP.py -seq1 Datasets/testData_SPhureja_1.fastq.gz 
 ```
-When run correctly, you will find a file within the Datasets folder contaning a summary of results in a newly created folder with the name Results_testData_SPhureja_1
+When run correctly, you will find a file within the Datasets folder contaning a summary of results in a newly created folder with the name Results_testData_SPhureja_1.
+
 During execution you should an output similar to this:
 
 ```markdown
@@ -266,7 +269,7 @@ python3 PVDP/Scripts/PVDP.py -seq1 Datasets/testData_SPhureja_1.fastq.gz -seq2 D
 The following table illustrates the parameters currently available for the execution of PVDP. They can be implemente using the following syntax.
 
 ```markdown
-python Scripts/PVDP.py -seq1 <file_route> [options]
+python Scripts/PVDP.py -seq1 <file location> [options]
 ```
 
 | Parameter | Description | Type |
