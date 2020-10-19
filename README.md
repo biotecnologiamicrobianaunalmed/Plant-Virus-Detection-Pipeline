@@ -309,7 +309,7 @@ You do not need to change anything else in the script.
 ![Report5](/assets/Report5.gif)
 ![Report6](/assets/Report6.gif)
 
-You can close the window, the report is saved as *VirusReport.html*, in the same location as the **VirusReport.Rmd** script.
+You can close the window, the report is saved as *Output-date.html*, in the same location as the **VirusReport.Rmd** script.
 
 <a name="Issues"></a>
 ## Known issues
