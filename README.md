@@ -10,7 +10,7 @@
 * [Known issues](#Issues)
 * [Support](#Support)
 * [Citation](#Citation)
-* [Plant Samples](#Plant samples)
+* [Plant samples](#Plant samples)
 <a name="Info"></a>
 
 
