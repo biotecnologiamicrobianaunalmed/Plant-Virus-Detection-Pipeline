@@ -351,4 +351,6 @@ Need help running PVDP? Please contact us at lab labmicrobiologia_med@unal.edu.c
 
 <a name="Citation"></a>
 ## Citation
-If you use PVDP in your research, please include the following reference: Gutierrez et al. (2020) To be published.
+If you use PVDP in your research, please include the following reference: Gutierrez et al. (2021). Physiol. Mol. Plant Pathol. 113:101604. https://doi.org/10.1016/j.pmpp.2021.101604
+## Citation
+Plant samples were collected in Colombia using permission RGE152-27 from Ministerio del Medio Ambiente y Desarrollo Sostenible of Colombia (Resolution 0208, 9/03/2020).
